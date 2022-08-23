@@ -1,0 +1,98 @@
+                        GIT ONLY COMMANDS                       
+
+git init                        initialise current directory as a git repo
+git status                      show if there are any untracked files, 
+                                conflicts, or files staged without a commit
+git add <file>                  add <file> to the stage (so git tracks it)
+git add .                       add all files in directory to the stage
+git add *.<e>                   add all filed with <e> extention to the stage
+git commit -m "<comment>"       commit the changes to the repo, adding 
+                                <comment> as a comment 
+git checkout -b <name>          create a new branch called <name> and switch
+                                to it
+git checkout <branch>           switch to an existing branch called <name>
+git merge <branch>              merge the branch <branch> to the current one 
+git branch                      see which branches exist, and which you are on 
+                                (denoted with an *)
+git clone <SSH> [name]          clone (create a local copy) of the repo <SSH>, 
+                                optionally adding the name [name]
+git remote add [origin] <SSH>   add a remote repo to your local device for <SSH>, 
+                                optionally naming it [origin]
+//git remote allows you to track the changes in a remote repository, as well as 
+pushing and pulling changes, for a repo that exists and you want to update or 
+communicate with. git clone, however, creates a new repo on your local device 
+which is an exact replica of the cloned repo//
+git push (-u[origin]<master>)   push your changes to the remote. use the code in 
+                                brackets the first time to inform git that your
+                                branch <master> is the same as the [origin] branch
+                                <master>
+git pull (-u [origin]<master>)  pull any changes made in the remote so your repo
+                                is up-to-date with it (brackets as above)
+git remote (-v)                 get a list of all your remotes, the -v tells git
+                                to also return the url of each remote
+git log                         return a log of your activity
+git log --online                return a log with only one line per change
+git log --oneline --graph       return a graph log showing you branch patterns
+git revert HEAD [commit]        create a new commit which does the opposite of the 
+                                previous, reverting the file without losing the
+                                history - [commit] used to specifiy a specific log 
+                                to revert to
+//nano will request a comment be added. you can either add it in nano, or exit and
+then enter 'git commit 'm "[text]"' to commit the staged revert
+git reset --hard [commit]       change the file back to [commit] without keeping 
+                                the history or log; undo the commit(s) completely 
+
+
+                    USEFUL CLI COMMANDS WITH GIT
+cd <path>                       change directory to <path>
+cd ..                           change directory to parent (one above)
+pwd                             print working directory
+touch <file>                    create a new file in the current directory
+echo "<text>"                   print <text>
+echo "<text>" > <file>          print <text> into <file>
+cat <file>                      print contents of the file
+ls                              list all files in directory
+ls -la                          list all files in directory, including hidden
+rm <file>                       remove <file>
+rm -f <file>                    force remove <file> (if git return error for rm)
+mkdir <name>                    make directory (folder)
+rmdir <name>                    remove directory (folder)
+rmdir --ignore <name>           remove directory, ignoring "not empty" error
+mv <file> <newname>             rename <file> to <newname>
+mvdir <dir> <newname>           rename directory to <newname>
+vi <file>                       open file in vi text editor
+//in vi:
+    i                           insert new line at current position
+    x                           delete highlighted character
+    dd                          delete highlighted character's line 
+    <esc>                       exit current editing tool (e.g., i)
+    :wq                         exit vi 
+sed [command] <file>            sed text editor command format. replace [command]
+                                with the command corresponding to the change you 
+                                want to make to <file>
+//for command:
+    's/a/b/'                    substitute the first instance of 'a' with 'b' in
+    's/a/b/n'                   substitute the nth instance of 'a' with 'b'
+    's/a/b/g'                   substitute all instances of 'a' with 'b'
+    's/a/b/ng'                  starting at n, replace all following instances of
+                                'a' with 'b'
+    'nd'                        delete the nth line
+    '$d'                        delete the last line
+    'x,yd'                      delete line x to line y (y can be $ to denote last)
+    G                           insert a blank line after every line in file
+    'G;G'                       instert two blank lines after every line in file 
+    '/^$/d;G'                   delete blank lines and insert a new blank line after
+                                each remaining line
+    '/<text>/G'                 insert a blank line after every line matching <text>
+    's/^/x/'                    instert x to the left of every line
+    '/<text>/{x;p;x;}'          insert a blank line above every line matching <text>
+nano <file>                     open <file> in nano 
+nano <newfile>                  create a new file called <newfile> and open with nano 
+<ctrl> + [x]                    execute command [x]
+//for [x]:
+    X                           close nano editor 
+    O                           write out (save) file 
+    G                           open nano help screen
+    K                           cut the current line 
+    U                           paste the cut line 
+    J                           justify current pararaph 

@@ -1,0 +1,17 @@
+package com.qa.hashmaps;
+
+import java.util.Map;
+
+public class Runner {
+
+	public static void main(String[] args) {
+		Map<String, Integer> people = new HashMap<>();
+		
+		people.put("Emily", 23);
+		people.put("James", 20);
+		people.put("Ammar", 21);
+		people.put("Bianca", 20);
+
+	}
+
+}

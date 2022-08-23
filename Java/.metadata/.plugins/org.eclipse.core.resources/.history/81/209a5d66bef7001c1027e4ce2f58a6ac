@@ -1,0 +1,10 @@
+package com.emily.helloWorld;
+
+public class helloWorld {
+
+	public static void printMessage() {
+		String message = "Hello World!";
+		System.out.println(message);
+	}
+
+}

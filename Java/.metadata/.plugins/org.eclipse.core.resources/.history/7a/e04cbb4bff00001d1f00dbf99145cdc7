@@ -1,0 +1,91 @@
+package garageChallenge;
+
+public class Car extends Vehicle {
+
+	// Attributes
+	String Make;
+	String Model;
+	Boolean Automatic;
+	Integer Age;
+	Integer CostOfWork;
+
+	// Class Constructors
+	public Car() {
+	};
+
+	public Car(Integer VehicleID, Integer Wheels, String Colour, Integer ManufactureYear, String Make, String Model,
+			Boolean Automatic) {
+		super(VehicleID, Wheels, Colour, ManufactureYear);
+		this.Make = Make;
+		this.Model = Model;
+		this.Automatic = Automatic;
+	}
+
+	// Getters and Setters
+	public String getMake() {
+		return Make;
+	}
+
+	public String getModel() {
+		return Model;
+	}
+
+	public Boolean getAutomatic() {
+		return Automatic;
+	}
+
+	public void setMake(String Make) {
+		this.Make = Make;
+	}
+
+	public void setModel(String Model) {
+		this.Model = Model;
+	}
+
+	public void getAutomatic(Boolean Automatic) {
+		this.Automatic = Automatic;
+	}
+
+	// Override Methods
+	@Override
+	public Integer getAge(Integer CurrentYear) {
+		Age = (CurrentYear - getManufactureYear());
+		return Age;
+	}
+
+	@Override
+	public Integer costOfWork() {
+		Integer perWheel = 100;
+		Integer WheelsReplace = 0;
+		Boolean engineFault = false;
+		Boolean repaint = false;
+		if (WheelsReplace > 0) {
+			getMake();
+			if (Make == "BMW" || Make == "Audi" || Make == "Ferrari" || Make == "Jaguar") {
+				perWheel = 200;
+			} else if (Make == "Ford" || Make == "Volkswagen") {
+				perWheel = 50;
+			}
+			CostOfWork = +(WheelsReplace * perWheel);
+		}
+		if (engineFault == true) {
+			getAutomatic();
+			if (Automatic = true) {
+				CostOfWork =+ 100;
+			} else {
+				CostOfWork =+ 300;
+			}
+		} if (repaint == true); {
+			getColour();
+			if (Colour == "Purple" || Colour == "Gold" || Colour == "Yellow") {
+				CostOfWork = +200;
+			} else {
+				CostOfWork = +100;
+			}
+		}
+		if (Age > 10) {
+			CostOfWork = (CostOfWork*2);
+		}
+
+	}
+}

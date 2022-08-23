@@ -1,0 +1,9 @@
+package openCloseAction;
+
+public class Greeter{
+	
+	public void sayHello(Speech type) {
+		System.out.println(type.sayGreeting());
+	}
+
+}

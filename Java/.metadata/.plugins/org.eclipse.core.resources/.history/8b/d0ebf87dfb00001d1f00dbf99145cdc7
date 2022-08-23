@@ -1,0 +1,16 @@
+package garageChallenge;
+
+public abstract class Vehicle {
+	
+	// Attributes
+	Integer VehicleID;
+	Integer Wheels;
+	Double Weight;
+	String Colour;
+	Integer ManufactureDate;
+	
+	// Methods
+	public abstract Double getAge();
+	public abstract Double costOfWork();
+
+}

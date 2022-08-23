@@ -1,0 +1,17 @@
+1657631888465	Encapsulate field 'mileage'
+1657632997184	Encapsulate field 'name'
+1657633253452	Encapsulate field 'money'
+1657637246924	Encapsulate field 'bedrooms'
+1657638032509	Encapsulate field 'road'
+1657638036007	Encapsulate field 'sqft'
+1657638144086	Encapsulate field 'road'
+1657638148895	Encapsulate field 'sqft'
+1657639183098	Encapsulate field 'sqft'
+1657871682881	Rename package 'interfaceSegregation'
+1657873202695	Rename package 'lisvoksubstitution'
+1657873212937	Rename package 'com.qa.singleResponsibility'
+1657873318555	Delete element
+1657873326103	Rename package 'interfacesegregation'
+1657873564125	Delete element
+1657873571223	Rename package 'liskovsubstitution'
+1657874082677	Rename package 'dependencyinversion'

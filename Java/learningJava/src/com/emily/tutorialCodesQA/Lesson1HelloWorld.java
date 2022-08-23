@@ -1,0 +1,14 @@
+package com.emily.tutorialCodesQA;
+
+public class Lesson1HelloWorld {
+	
+	public static void main(String[] args) { //main() function which informs system of what to do with the code below
+		helloWorld(); //main is told to run the method 'helloWorld()'
+	}
+	
+	public static void helloWorld() { //new method created which is static, should not return anything, and called HelloWorld 
+		String message = "Hello, World"; //a string variable named 'message' is created containing "Hello, World" 
+		System.out.println(message); //the system is told to print out the variable 'message'
+	}
+
+}

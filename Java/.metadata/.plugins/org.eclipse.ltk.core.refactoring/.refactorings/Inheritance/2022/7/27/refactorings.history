@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;qa.com.inheritance.Animal&apos; to &apos;Mammal&apos;&#x0D;&#x0A;- Original project: &apos;Inheritance&apos;&#x0D;&#x0A;- Original element: &apos;qa.com.inheritance.Animal&apos;&#x0D;&#x0A;- Renamed element: &apos;qa.com.inheritance.Mammal&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Animal&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;qa.com.inheritance{Animal.java[Animal" matchStrategy="1" name="Mammal" qualified="false" references="true" similarDeclarations="false" stamp="1657102162747" textual="false" version="1.0"/>
+</session>

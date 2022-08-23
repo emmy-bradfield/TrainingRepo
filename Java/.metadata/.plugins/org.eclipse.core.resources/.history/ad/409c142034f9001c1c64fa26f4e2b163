@@ -1,0 +1,14 @@
+package com.emily.learningPathQA;
+
+public class Lesson1HelloWorld {
+	
+	public static void main(String[] args) {
+		helloWorld();
+	}
+	
+	public static void helloWorld() {
+		String message = "Hello, World";
+		System.out.println(message);
+	}
+
+}

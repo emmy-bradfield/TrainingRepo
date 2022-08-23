@@ -1,0 +1,10 @@
+package garageChallenge;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Car tomsCar = new Car(1, 4, "Black", 2009, "Ford", false);
+
+	}
+
+}

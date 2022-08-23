@@ -1,0 +1,22 @@
+package garageChallenge;
+
+public class Van extends Vehicle{
+	
+	String Make;
+	Integer Milage;
+	Integer Age;
+	Integer CostOfWork;
+
+	@Override
+	public Integer getAge(Integer CurrentYear) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Integer costOfWork() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

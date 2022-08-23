@@ -1,0 +1,21 @@
+package com.qa.helloworld;
+
+public class EmilyTest {
+	
+	public static void functionName() {
+		String message =  "This function informs Java to create a string called 'message' consisting of this text. You can then call it from main";
+		System.out.println(message);
+	
+	}
+	
+	public static void printString(String message) {
+		System.out.println(message);
+	}
+	
+	public static void main (String[] args) {
+		functionName();
+		printString("Or, you can create a function to print strings, then type the message out when you call the function from main");
+	}
+	
+
+}

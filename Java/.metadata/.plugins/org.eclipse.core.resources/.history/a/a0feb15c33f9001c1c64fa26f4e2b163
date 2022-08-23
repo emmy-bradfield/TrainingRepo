@@ -1,0 +1,32 @@
+package com.qa.helloworld;
+
+public class EmilyTest {
+
+	public static void functionName() {
+		String message = "This function informs Java to create a string called 'message' consisting of this text. You can then call it from main";
+		System.out.println(message);
+
+	}
+
+	public static void printString(String message) {
+		System.out.println(message);
+	}
+
+	public static void dataTypes() {
+		String dataTypes = "There are differet types of data, and each must be define (e.g., 'string', 'int')";
+		String dataTypesTwo = "You must also then give the data a name, such as 'message', 'myNum', etc";
+		String dataTypesThree = "Lastly, you set it as equal to a value, using ' = <value>' at the end";
+		System.out.println(dataTypes);
+		System.out.println(dataTypesTwo);
+		System.out.println(dataTypesThree);
+
+	}
+
+	public static void main(String[] args) {
+		functionName();
+		printString(
+				"Or, you can create a function to print strings, then type the message out when you call the function from main");
+		dataTypes();
+	}
+
+}

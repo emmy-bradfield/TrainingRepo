@@ -1,0 +1,30 @@
+package garageChallenge;
+
+public class Van extends Vehicle{
+	
+	String Make;
+	Integer Milage;
+	Integer Age;
+	Integer CostOfWork;
+	
+	public Van() {
+	}
+	
+	public Van(Integer VehicleID, Integer Wheels, String Colour, Integer ManufactureYear, String Make, Integer Milage) {
+		super(VehicleID, Wheels, Colour, ManufactureYear);
+				
+	}
+
+	@Override
+	public Integer getAge(Integer CurrentYear) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Integer costOfWork() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

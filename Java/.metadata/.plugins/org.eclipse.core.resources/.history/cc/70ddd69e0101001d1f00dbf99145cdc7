@@ -1,0 +1,10 @@
+package garageChallenge;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Garage {
+	
+	List<Vehicle> vehiclesToFix = new ArrayList<Vehicle>();
+	
+}

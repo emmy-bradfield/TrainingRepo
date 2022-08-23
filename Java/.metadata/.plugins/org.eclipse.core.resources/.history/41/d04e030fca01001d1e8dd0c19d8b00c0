@@ -1,0 +1,34 @@
+package optionals;
+
+import java.util.Optional;
+
+public class Runner {
+
+	public static void main(String[] args) {
+		// The ofNullable function wraps around the object or variable and means that if it is null, 
+		// Java won't throw an exception. We we just use Optional.of then Java will throw an exception
+		// whenever it is null. The code below shows a 50/50 chance of either the correct attributes
+		// (String, String, and Integer) being added to a new fruit or nothing being added. As the
+		// object Apple (fruit) cannot be null, Java would throw an exception, but now it doesn't. This
+		// is most useful for things like databases where data may be empty.
+		Fruit apple = new Fruit();
+		if(Math.random() >=0.5) {
+			apple.name = "Apple";
+			apple.colour = "red";
+			apple.quantity = 1;
+		} else {
+			apple.name = null;
+			apple.colour = null;
+			apple.quantity = null;
+		}
+		Optional.ofNullable(apple.name);
+		
+		if (Math.random() >= 0.5) {
+			Fruit pear = new Fruit("green", 1, "Pear");
+		} else {
+			Fruit orange = new Fruit("orange", 1, "Orange");
+		}
+		System.out.println(pear.isPresent());
+	}
+
+}

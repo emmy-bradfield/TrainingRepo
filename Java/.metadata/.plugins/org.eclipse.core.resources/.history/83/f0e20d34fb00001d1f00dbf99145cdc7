@@ -1,0 +1,15 @@
+package garageChallenge;
+
+public class Vehicle {
+	
+	// Attributes
+	Integer Wheels;
+	Double Weight;
+	String Colour;
+	Integer ManufactureDate;
+	
+	public Vehicle() {
+		
+	}
+
+}

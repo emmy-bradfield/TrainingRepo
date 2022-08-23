@@ -1,0 +1,31 @@
+{
+    "sales": {
+        "sale":[
+            {
+                "-id" : "02650",
+                "-date" : "2022-07-30",
+                "customer" : {
+                    "-id" : "013001",
+                    "-name" : "James Bradfield"
+                },
+                "products": {
+                    "product" :[
+                        {
+                            "-id" : "2087N",
+                            "-name" : "Condom, single (used)",
+                            "-price" : "0.21",
+                            "qty_purchased" : "20"
+                        },
+                        { 
+                            "-id" : "2087N",
+                            "-name" : "Cheesestring",
+                            "-price" : "1.15",
+                            "qty_purchased" : "3"
+                        }
+                    ]
+                },
+            "total":"7.65"
+            }
+        ]
+    }
+}

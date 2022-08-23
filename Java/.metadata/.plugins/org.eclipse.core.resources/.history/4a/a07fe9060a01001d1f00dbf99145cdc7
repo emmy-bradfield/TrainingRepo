@@ -1,0 +1,56 @@
+package garageChallenge;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Garage {
+	
+	// Attributes
+	Integer VehicleID = 1;
+	String CustomerName;	
+	
+	static List<Vehicle> inGarage = new ArrayList<Vehicle>();
+	
+	public String getCustomer() {
+		return CustomerName;
+	}
+	
+	public Integer addCar(Integer Wheels, String Colour, Integer ManufactureYear, String Make, Boolean Automatic, Integer WheelsReplace, Boolean EngineFault, Boolean Repaint) {
+		Car car = new Car(VehicleID, Wheels, Colour, ManufactureYear, Make, Automatic);
+		inGarage.add(car);
+		car.setWheelsReplace(WheelsReplace);
+		car.setEngineFault(EngineFault);
+		car.setRepaint(Repaint);
+		car.costOfWork(WheelsReplace, EngineFault, Repaint);
+		Integer Cost = car.getCostOfWork();
+		System.out.println("The total cost for this work is " + Cost);
+		VehicleID =+ 1;
+		return VehicleID;
+	}
+	
+	public Integer addMotobike(Integer Wheels, String Colour, Integer ManufactureYear, Integer CC, String Make, Integer WheelsReplace, Boolean EngineFault, Boolean Repaint) {
+		Motobike motobike = new Motobike(VehicleID, Wheels, Colour, ManufactureYear, CC,  Make);
+		inGarage.add(motobike);
+		motobike.setWheels(WheelsReplace);
+		motobike.setEngineFault(EngineFault);
+		motobike.setRepaint(Repaint);
+		motobike.costOfWork(WheelsReplace, EngineFault, Repaint);
+		Integer Cost = motobike.getCostOfWork();
+		System.out.println("The total cost for this work is: " + Cost);
+		VehicleID =+1;
+		return VehicleID;
+	}
+	
+	public Integer addVan(Integer Wheels, String Colour, Integer ManufactureYear, String Make, Integer Milage, Integer WheelsReplace, Boolean EngineFault, Boolean Repaint) {
+		Van van = new Van(VehicleID, Wheels, Colour, ManufactureYear, Make, Milage);
+		inGarage.add(van);
+		van.setWheels(WheelsReplace);
+		van.setEngineFault(EngineFault);
+		van.setRepaint(Repaint);
+		van.setCostOfWork(WheelsReplace, EngineFault, Repaint);
+		Integer Cost = van.getCostOfWork();
+		VehicleID =+1;
+		return VehicleID;
+	}
+	
+}

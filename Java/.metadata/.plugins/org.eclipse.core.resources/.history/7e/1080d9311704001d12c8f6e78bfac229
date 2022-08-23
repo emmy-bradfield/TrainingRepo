@@ -1,0 +1,9 @@
+package com.qa.interfacesegregation;
+
+public interface EggLayingCreature{
+
+    public void layEggs() {
+        this.setNumberOfEggs(getNumberOfEggs() + 1);
+    }
+
+}

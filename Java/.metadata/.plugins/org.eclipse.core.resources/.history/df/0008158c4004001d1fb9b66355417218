@@ -1,0 +1,12 @@
+package com.qa.runner;
+
+import com.qa.enums.*;
+
+public class Runner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

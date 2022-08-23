@@ -1,0 +1,18 @@
+package garageChallenge;
+
+public class Main{
+	
+	public static void main(String[] args) {
+		Car tomsCar = new Car(1, 4, "Black", 2009, "Ford", false);
+		Car mandysCar = new Car(2, 4, "Purple", 2019, "BMW", true);
+		Motobike lindasBike = new Motobike(3, 2, "Silver", 2021, 250, "Yamaha");
+		Van davesVan = new Van(4, 4, "White", 2002, "Vauxhall", 120000);
+		Garage.inGarage.add(tomsCar);
+		Garage.inGarage.add(mandysCar);
+		Garage.inGarage.add(lindasBike);
+		Garage.inGarage.add(davesVan);
+		
+
+	}
+
+}

@@ -1,0 +1,17 @@
+package com.qa.helloworld;
+
+public class returnTypes2 {
+	   public void noReturn() {
+		   System.out.println("No value returned");
+		   }
+
+	   public String withReturn() {
+		   System.out.println("Value returned");
+		   return "Hello World";
+	    }
+	   public void main (String[] args) {
+		   withReturn();
+		   noReturn();
+	   }
+	   
+	}

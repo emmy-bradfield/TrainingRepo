@@ -1,0 +1,6 @@
+package liskovSubstitution;
+
+public abstract class OneRoom extends Apartment{
+	private Integer bedrooms = 0;
+
+}

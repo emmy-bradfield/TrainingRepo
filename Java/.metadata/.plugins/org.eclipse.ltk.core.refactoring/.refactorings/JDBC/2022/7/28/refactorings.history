@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;databases.DatabaseConnecter&apos; to &apos;LearningJDBC&apos;&#x0D;&#x0A;- Original project: &apos;JDBC&apos;&#x0D;&#x0A;- Original element: &apos;databases.DatabaseConnecter&apos;&#x0D;&#x0A;- Renamed element: &apos;databases.LearningJDBC&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;DatabaseConnecter&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;databases{DatabaseConnecter.java[DatabaseConnecter" matchStrategy="1" name="LearningJDBC" qualified="false" references="true" similarDeclarations="false" stamp="1657878490094" textual="false" version="1.0"/>
+</session>

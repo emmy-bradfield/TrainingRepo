@@ -1,0 +1,25 @@
+package com.emily.helloWorld;
+
+public class NamingConvention {
+	public static interface descriptive {}
+	public static void doing() {
+		String simpleName = "A variable";
+		String t = "A temporary variable";
+		String NEW_VARIABLE = "Constants and Enums";
+		String G = "Generic Types";
+		String Exception = "Exceptions";
+		String dotSeperated = "names.of.packages";
+		String IFOA = "In Full Or as Acronym";
+		System.out.println(simpleName);
+		System.out.println(t);
+		System.out.println(NEW_VARIABLE);
+		System.out.println(G);
+		System.out.println(Exception);
+		System.out.println(dotSeperated);
+		System.out.println(IFOA);
+	}
+		
+	public static void main (String[] args) {
+		doing();
+	}
+}

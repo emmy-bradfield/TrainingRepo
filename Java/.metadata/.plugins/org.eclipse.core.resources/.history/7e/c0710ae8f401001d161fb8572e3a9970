@@ -1,0 +1,23 @@
+package liskovSubstitution;
+
+public abstract class ManyRoom extends Apartment{
+	
+	public Integer bedrooms;
+	private int sqft;
+	
+	public Integer getBedrooms(Apartment property) {
+		bedrooms = property.getNumberOfBedrooms();
+		return bedrooms;
+	}
+	
+	public void setBedrooms(Integer bedrooms, Apartment propery) {
+		this.bedrooms=bedrooms;
+	}
+	
+	public Integer getSize(Apartment property) {
+		sqft = property.getSquareFootage();
+		return sqft;
+	}
+
+
+}

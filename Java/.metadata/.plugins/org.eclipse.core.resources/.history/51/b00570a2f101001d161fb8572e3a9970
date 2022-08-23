@@ -1,0 +1,11 @@
+package liskovSubstitution;
+
+public abstract class ManyRoom extends Appartment{
+	
+	public Integer bedrooms;
+
+	public void setSquareFootage(int sqft) {
+		
+	}
+
+}

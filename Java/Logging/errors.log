@@ -1,0 +1,2 @@
+20220715 15:11:29 INFO  [main] LoggingDemo LoggingDemo.java9 - The URL you have provided for the localhost is not recognised.\n'jdbc:mysql://localhost:3306/' followed by your database names is usually best.\nIf this is still not working, check the SQL connector is in\nthis project's build path
+20220715 15:11:29 WARN  [main] LoggingDemo LoggingDemo.java10 - Warning: the SQL localhost is not recognised; unable to proceed

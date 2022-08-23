@@ -1,0 +1,36 @@
+package com.qa.singleresponsibility;
+
+public class Mechanic {
+	
+	String name;
+	Integer cost = 0;
+	
+	public Mechanic(String name) {
+		this.name = name;
+		getCost();
+	}
+
+	public void addSpoiler(Car car) {
+		car.setSpoiler(true);
+		setCost(getCost() + 200);
+	}
+	
+	public void repaint(String colour, Car car) {
+		car.setColour(colour);
+		setCost(getCost() + 100);
+	}
+	
+	public void setCost(Integer cost) {
+		this.cost = cost;
+		
+	}
+	
+	public Integer getCost() {
+		return cost;
+	}
+
+	public String getName() {
+		return name;
+	}
+	
+}

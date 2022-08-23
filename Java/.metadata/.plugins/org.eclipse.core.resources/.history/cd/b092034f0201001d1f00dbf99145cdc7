@@ -1,0 +1,14 @@
+package garageChallenge;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main{
+	
+	public static void main(String[] args) {
+		List<Vehicle> inGarage = new ArrayList<>();
+		Car tomsCar = new Car(1, 4, "Black", 2009, "Ford", false);
+
+	}
+
+}

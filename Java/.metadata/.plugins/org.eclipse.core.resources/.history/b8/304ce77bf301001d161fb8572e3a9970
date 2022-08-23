@@ -1,0 +1,64 @@
+package com.qa.runner;
+
+import com.qa.singleResponsibility.Car;
+import com.qa.singleResponsibility.Driver;
+import com.qa.singleResponsibility.Mechanic;
+
+import liskovSubstitution.Apartment;
+import liskovSubstitution.BedroomAdder;
+import liskovSubstitution.ManyRoom;
+import liskovSubstitution.OneRoom;
+import liskovSubstitution.Penthouse;
+import liskovSubstitution.Studio;
+import openCloseAction.CasualGreeting;
+import openCloseAction.FormalGreeting;
+import openCloseAction.Greeter;
+import openCloseAction.Greeting;
+import openCloseAction.Speech;
+
+public class Runner {
+
+	public static void singleResponsibility() {
+		Car J444CEB = new Car("silver", "Ford Focus", 92000);
+		Driver Emily = new Driver("Emily", 1000);
+		Emily.purchaseCar(J444CEB);
+		System.out.println(Emily.getName() + " purchased a " + J444CEB.carDetails());
+		Emily.drive(265, J444CEB);
+		System.out.println(Emily.getName() + " then drove it for " + Emily.getDrive() + " miles.");
+		Mechanic Dave = new Mechanic("Dave");
+		Dave.addSpoiler(J444CEB);
+		Dave.repaint("purple", J444CEB);
+		Dave.getCost();
+		System.out.println("The mechanic, " + Dave.getName() + ", added a spoiler and repainted " + Emily.getName()
+				+ "'s car. It cost £" + Dave.getCost());
+		System.out.println(Emily.getName() + " had £" + Emily.getMoney() + " and " + Dave.getName() + " cost £"
+				+ Dave.getCost() + ".");
+		Emily.payMechanic(Dave);
+		System.out.println("After paying " + Dave.getName() + ", " + Emily.getName() + " has £" + Emily.getMoney()
+				+ " and a " + J444CEB.carDetails());
+	}
+	
+	public static void openClosed() {
+		Speech formal = new FormalGreeting();
+		Greeter.sayHello(formal);
+		Speech casual = new CasualGreeting();
+		Greeter.sayHello(casual);
+		Speech basic = new Greeting();
+		Greeter.sayHello(basic);
+	}
+
+	public static void liskovSubstitution() {
+		OneRoom portswoodRoad = new Studio();
+		ManyRoom moretonRoad = new Penthouse();
+		BedroomAdder bedroomAdder = new BedroomAdder();
+		bedroomAdder.makeMoreRoom(portswoodRoad);
+		bedroomAdder.addBedroom(moretonRoad);
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		
+
+	}
+}

@@ -1,0 +1,7 @@
+package com.emily.practicePackage;
+import com.emily.helloWorld.NamingConvention;
+
+
+public class testOne {
+	
+}

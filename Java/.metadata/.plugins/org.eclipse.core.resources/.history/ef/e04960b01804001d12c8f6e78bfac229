@@ -1,0 +1,11 @@
+package dependencyinversion;
+
+public class BackendDeveloper implements Developer {
+	private String coding = "C# is just Microsoft Java anyway";
+
+	@Override
+	public void writeCode() {
+		System.out.println();
+	}
+
+}

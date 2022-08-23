@@ -1,0 +1,18 @@
+package liskovSubstitution;
+
+public abstract class OneRoom extends Apartment{
+	public Integer bedrooms;
+	public Integer sqft;
+	
+	public abstract Integer getBedrooms();
+	
+	public abstract void setBedrooms();
+	
+	public abstract Integer getSize();
+	
+	public abstract void setSize(Integer sqft);
+
+	protected abstract String getRoad();
+
+
+}

@@ -1,0 +1,64 @@
+package garageChallenge;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Garage {
+	
+	// Attributes
+	Integer WheelsReplace;
+	Boolean EngineFault;
+	Boolean Repaint;
+	Integer VehicleID = 1;
+	String CustomerName;
+	
+	// Getters and Setters
+	public Integer getWheelsReplace() {
+		return WheelsReplace;
+	}
+	
+	public Boolean getEngineFault() {
+		return EngineFault;
+	}
+	
+	public Boolean getRepaint() {
+		return Repaint;
+	}
+	
+	public void setWheelsRepalce(Integer WheelsRepalce) {
+		this.WheelsReplace=WheelsRepalce;
+	}
+	
+	public void setEngineFault(Boolean EngineFault) {
+		this.EngineFault = EngineFault;
+	}
+	public void setRepaint(Boolean Repaint) {
+		this.Repaint = Repaint;
+	}
+	
+	
+	static List<Vehicle> inGarage = new ArrayList<Vehicle>();
+	
+	public String getCustomer() {
+		return CustomerName;
+	}
+	
+	public Integer addCar(Integer Wheels, String Colour, Integer ManufactureYear, String Make, Boolean Automatic) {
+		inGarage.add(new Car(VehicleID, Wheels, Colour, ManufactureYear, Make, Automatic));
+		VehicleID =+1;
+		return VehicleID;
+	}
+	
+	public Integer addMotobike(Integer Wheels, String Colour, Integer ManufactureYear, Integer CC, String Make) {
+		inGarage.add(new Motobike(VehicleID, Wheels, Colour, ManufactureYear, CC,  Make));
+		VehicleID =+1;
+		return VehicleID;
+	}
+	
+	public Integer addVan(Integer Wheels, String Colour, Integer ManufactureYear, String Make, Integer Milage) {
+		inGarage.add(new Van (VehicleID, Wheels, Colour, ManufactureYear, Make, Milage));
+		VehicleId =+1;
+		return VehicleID;
+	}
+	
+}

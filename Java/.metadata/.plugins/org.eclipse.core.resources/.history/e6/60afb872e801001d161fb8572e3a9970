@@ -1,0 +1,52 @@
+package com.qa.singleResponsibility;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Driver {
+	
+	List<Car> driveway = new ArrayList<>();
+	private String name;
+	private Integer milesDriven;
+	private Integer money;
+	
+	public Driver (String name) {
+		this.setName(name);
+	}
+
+	// functionality
+	public void purchaseCar(Car car) {
+		driveway.add(car);
+	}
+	
+	public void drive(int milesDriven, Car car) {
+		this.milesDriven = milesDriven;
+		car.setMileage(car.getMileage()+milesDriven);
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name, Integer money) {
+		this.name = name;
+		this.money = money;
+	}
+	
+	public Integer getDrive() {
+		return milesDriven;
+	}
+	
+	public void setDrive(Integer milesDriven) {
+		this.milesDriven=milesDriven;
+	}
+
+	public Integer getMoney() {
+		return money;
+	}
+
+	public void setMoney(Integer money) {
+		this.money = money;
+	}
+
+}

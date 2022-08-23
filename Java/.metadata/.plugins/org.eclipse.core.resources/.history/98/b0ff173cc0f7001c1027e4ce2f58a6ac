@@ -1,0 +1,14 @@
+package com.emily.helloWorld;
+
+public class NamingConvention {
+
+	public static void printMessage() {
+		String message = "Hello World!";
+		System.out.println(message);
+	}
+	
+	public static void main (String[] arg) {
+		printMessage();
+	}
+
+}

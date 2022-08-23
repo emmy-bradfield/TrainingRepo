@@ -1,0 +1,45 @@
+package garageChallenge;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Garage {
+	
+	// Attributes
+	Integer VehicleID = 1;
+	String CustomerName;	
+	
+	static List<Vehicle> inGarage = new ArrayList<Vehicle>();
+	
+	public String getCustomer() {
+		return CustomerName;
+	}
+	
+	public Integer addCar(Integer Wheels, String Colour, Integer ManufactureYear, String Make, Boolean Automatic, Integer WheelsReplace, Boolean EngineFault, Boolean Repaint) {
+		Car car = new Car(VehicleID, Wheels, Colour, ManufactureYear, Make, Automatic);
+		inGarage.add(car);
+		car.setWheelsReplace(WheelsReplace);
+		car.setEngineFault(EngineFault);
+		car.setRepaint(Repaint);
+		car.setCostOfWork(WheelsReplace, EngineFault, Repaint);
+		Integer Cost = car.getCostOfWork();
+		System.out.println("The total cost for this work is " + Cost);
+		return VehicleID;
+	}
+	
+	public Integer addMotobike(Integer Wheels, String Colour, Integer ManufactureYear, Integer CC, String Make, Integer WheelsReplace, Boolean EngineFault, Boolean Repaint) {
+		Motobike motobike = new Motobike(VehicleID, Wheels, Colour, ManufactureYear, CC,  Make);
+		inGarage.add(motobike);
+		motobike.setCostOfWork(WheelsReplace, EngineFault, Repaint);
+		VehicleID =+1;
+		return VehicleID;
+	}
+	
+	public Integer addVan(Integer Wheels, String Colour, Integer ManufactureYear, String Make, Integer Milage) {
+		inGarage.add(new Van (VehicleID, Wheels, Colour, ManufactureYear, Make, Milage));
+		VehicleID =+1;
+		return VehicleID;
+	}
+	
+}

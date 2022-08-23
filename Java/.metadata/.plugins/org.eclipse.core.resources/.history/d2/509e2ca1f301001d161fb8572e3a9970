@@ -1,0 +1,15 @@
+package liskovSubstitution;
+
+public class Penthouse extends ManyRoom {
+	
+	
+	
+    public Penthouse(String road, int sqft, int bedrooms) {
+        this.setNumberOfBedrooms(4);
+    }
+
+    @Override
+    public void setSquareFootage(int sqft) {
+        this.setSquareFootage(this.getSquareFootage());
+    }
+}

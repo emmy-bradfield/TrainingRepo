@@ -1,0 +1,37 @@
+package garageChallenge;
+
+public class Car extends Vehicle{
+	
+	// Attributes
+	String Make;
+	String Model;
+	Boolean Automatic;
+	
+	// Class Constructors
+	public Car() {
+	};
+	
+	public Car(Integer VehicleID, Integer Wheels, String Colour, Integer ManufactureDate, String Make, String Model, Boolean Automatic) {
+		super(VehicleID, Wheels, Colour, ManufactureDate);
+		this.Make = Make;
+		this.Model = Model;
+		this.Automatic = Automatic;
+	}
+	
+	// Getters and Setters
+	public get
+	
+
+	@Override
+	public Double getAge() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Double costOfWork() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

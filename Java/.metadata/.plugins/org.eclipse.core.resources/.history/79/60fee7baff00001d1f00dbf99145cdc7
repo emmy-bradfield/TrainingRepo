@@ -1,0 +1,23 @@
+package garageChallenge;
+
+public class Motobike extends Vehicle{
+	
+	// Attributes
+	Integer Wheels;
+	Integer CC;
+	String Make;
+	Integer Age;
+
+	@Override
+	public Integer getAge(Integer CurrentYear) {
+		Age = (CurrentYear - getManufactureYear());
+		return Age;
+	}
+
+	@Override
+	public Integer costOfWork() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

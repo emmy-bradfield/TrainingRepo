@@ -1,0 +1,10 @@
+package com.qa.singleResponsibility;
+
+public class Mechanic {
+
+	public void addSpoiler() {
+		myCar = Driver
+		Car.setSpoiler(true);
+	}
+	
+}

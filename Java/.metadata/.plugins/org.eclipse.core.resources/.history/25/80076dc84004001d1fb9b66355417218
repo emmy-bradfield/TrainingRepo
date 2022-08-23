@@ -1,0 +1,20 @@
+package com.qa.runner;
+
+import com.qa.enums.*;
+
+public class Runner {
+	
+	public static void enumsRunner() {
+		// Here, the variable earthWeight is initialised by parsing 175 as a double and 
+		// setting it as such, then the mass is caluclated for EARTH using such
+		double earthWeight = Double.parseDouble("175");
+		double mass = earthWeight/Planet.EARTH.surfaceGravity();
+		System.out.println("Earth's mass is " + mass);
+	}
+
+	public static void main(String[] args) {
+
+
+	}
+
+}

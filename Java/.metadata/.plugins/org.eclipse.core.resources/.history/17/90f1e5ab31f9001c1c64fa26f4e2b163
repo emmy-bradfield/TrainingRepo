@@ -1,0 +1,45 @@
+package com.emily.practicePackage;
+
+public class testOne {
+	
+	public static void main (String[] args) {
+		intReturn();
+		booReturn();
+		chaReturn();
+		lonReturn();
+		floReturn();
+		strReturn();
+		voiReturn();
+		
+	}
+	
+	
+	public static int intReturn() {
+		return 0;
+	}
+	
+	public static boolean booReturn()  {
+		return true;
+	}
+	
+	public static char chaReturn() {
+		return 'p';
+	}
+	
+	public static long lonReturn() {
+		return 52L;
+	}
+	
+	public static float floReturn() {
+		return 0.6F;
+	}
+	
+	public static String strReturn() {
+		return "Hi, there";
+	}
+	
+	public static void voiReturn() {
+		// no return
+	}
+
+}

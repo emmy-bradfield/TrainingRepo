@@ -1,0 +1,24 @@
+package com.qa.LearningJDBC;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+// state.executeUpdate(String);
+// state.executeQuery(String);
+
+public class Main {
+
+	public static void main(String[] args) {
+		DatabaseConnecter test = new DatabaseConnecter("root", "Apple.Bob1");
+		int a = 0;
+
+		try (Connection con = test.getConnection(); 
+				Statement state = con.createStatement();) {
+			a = state.executeUpdate("INSERT INTO Customers VALUES (0, 'Emily Bradfield', 'emily-bradfield@outlook.com')");
+		} catch (SQLException e) {
+			// TODO
+			e.printStackTrace();
+		}
+	}
+}

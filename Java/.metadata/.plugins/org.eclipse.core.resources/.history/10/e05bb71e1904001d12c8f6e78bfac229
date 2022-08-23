@@ -1,0 +1,14 @@
+package com.qa.dependencyinversion;
+
+public class Project {    
+    public Project() {
+    	
+    }
+
+    public void implement() {
+    	private BackendDeveloper back = new BackendDeveloper();
+        private FrontendDeveloper front = new FrontendDeveloper();
+        back.writeCode();
+        front.writeCode();
+    }
+}

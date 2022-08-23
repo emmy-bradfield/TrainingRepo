@@ -1,0 +1,16 @@
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+public class LoggingDemo {
+	
+	private final Logger LOGGER = LogManager.getLogger(); 
+	
+	public void loggerFunctions() {
+		LOGGER.trace("");
+		LOGGER.debug("");
+		LOGGER.info("");
+		LOGGER.warn("");
+		LOGGER.error("");
+		LOGGER.fatal("");
+	}
+}

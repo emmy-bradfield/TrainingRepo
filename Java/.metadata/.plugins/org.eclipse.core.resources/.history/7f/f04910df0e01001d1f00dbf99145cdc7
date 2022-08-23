@@ -1,0 +1,111 @@
+package garageChallenge;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Garage {
+	
+	// Attributes
+	Integer VehicleID = 1;
+	String CustomerName;
+	Integer WheelsReplace;
+	Boolean EngineFault;
+	Boolean Repaint;
+	Integer CostOfWork;
+	
+	public Integer getWheelsReplace() {
+		return WheelsReplace;
+	}
+
+	public void setWheelsReplace(Integer WheelsReplace) {
+		this.WheelsReplace = WheelsReplace;
+	}
+
+	public Boolean getEngineFault() {
+		return EngineFault;
+	}
+
+	public void setEngineFault(Boolean EngineFault) {
+		this.EngineFault = EngineFault;
+	}
+
+	public Boolean getRepaint() {
+		return Repaint;
+	}
+
+	public void setRepaint(Boolean Repaint) {
+		this.Repaint = Repaint;
+	}
+	
+	public Integer getCostOfWork() {
+		return CostOfWork;
+	}
+	
+	public void setCostOfWork(Integer WheelsReplace, Boolean EngineFault, Boolean Repaint) {
+		this.setWheelsReplace(WheelsReplace);
+		this.setEngineFault(EngineFault);
+		this.setRepaint(Repaint);
+		
+	}
+	
+	static List<Vehicle> inGarage = new ArrayList<Vehicle>();
+	
+	public String getCustomer() {
+		return CustomerName;
+	}
+	
+	public void addCar(Integer Wheels, String Colour, Integer ManufactureYear, String Make, Boolean Automatic, Integer WheelsReplace, Boolean EngineFault, Boolean Repaint) {
+		Vehicle car = new Car(VehicleID, Wheels, Colour, ManufactureYear, Make, Automatic);
+		inGarage.add(car);
+	}
+	
+	public Integer generateBill(int VehicleID) {
+		Vehicle CurrentVehicle = inGarage.get(VehicleID);
+		CurrentVehicle.setWheels(WheelsReplace);
+		CurrentVehicle.setEngineFault(EngineFault);
+		CurrentVehicle.setRepaint(Repaint);
+		CurrentVehicle.costOfWork(WheelsReplace, EngineFault, Repaint);
+		CostOfWork = CurrentVehicle.getCostOfWork();
+		System.out.println("The total cost for this work is " + Cost);
+		VehicleID =+ 1;
+	}
+	
+	
+	public Integer addMotobike(Integer Wheels, String Colour, Integer ManufactureYear, Integer CC, String Make, Integer WheelsReplace, Boolean EngineFault, Boolean Repaint) {
+		Motobike motobike = new Motobike(VehicleID, Wheels, Colour, ManufactureYear, CC,  Make);
+		inGarage.add(motobike);
+		motobike.setWheels(WheelsReplace);
+		motobike.setEngineFault(EngineFault);
+		motobike.setRepaint(Repaint);
+		motobike.costOfWork(WheelsReplace, EngineFault, Repaint);
+		Integer Cost = motobike.getCostOfWork();
+		System.out.println("The total cost for this work is " + Cost);
+		VehicleID =+1;
+		return VehicleID;
+	}
+	
+	public Integer addVan(Integer Wheels, String Colour, Integer ManufactureYear, String Make, Integer Milage, Integer WheelsReplace, Boolean EngineFault, Boolean Repaint) {
+		Van van = new Van(VehicleID, Wheels, Colour, ManufactureYear, Make, Milage);
+		inGarage.add(van);
+		van.setWheels(WheelsReplace);
+		van.setEngineFault(EngineFault);
+		van.setRepaint(Repaint);
+		van.costOfWork(WheelsReplace, EngineFault, Repaint);
+		Integer Cost = van.getCostOfWork();
+		System.out.println("The total cost for this work is " + Cost);
+		VehicleID =+1;
+		return VehicleID;
+	}
+	
+	public void findBill(Vehicle vehicle) {
+	
+	}
+	
+	public void currentJobs() {
+		for (int i = 1; i < inGarage.size(); i++) {
+			inGarage.get(i).VehicleID.equals(i);
+			System.out.println("Vehicle: " + inGarage.get(i) + "Cost of Works: " );
+		}
+	}
+	
+}

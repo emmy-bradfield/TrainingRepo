@@ -1,0 +1,50 @@
+package liskovSubstitution;
+
+public class Studio extends OneRoom {
+    private String road;
+	private int sqft;
+
+
+	public Studio(String road, int sqft) {
+		this.setBedrooms(0);
+    	this.road = road;
+    	this.sqft = sqft;;
+	}
+
+	public String getRoad() {
+		return road;
+	}
+
+	public void setRoad(String road) {
+		this.road = road;
+	}
+
+	public int getSqft() {
+		return sqft;
+	}
+
+	public void setSqft
+
+	@Override
+	public Integer getBedrooms() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setBedrooms(Integer bedrooms) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Integer getSize() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setSize(Integer sqft) {
+		this.sqft = sqft;
+	}
+}

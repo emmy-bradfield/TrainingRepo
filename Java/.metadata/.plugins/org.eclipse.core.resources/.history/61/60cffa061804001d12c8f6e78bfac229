@@ -1,0 +1,5 @@
+package dependencyinversion;
+
+public class Project {
+
+}

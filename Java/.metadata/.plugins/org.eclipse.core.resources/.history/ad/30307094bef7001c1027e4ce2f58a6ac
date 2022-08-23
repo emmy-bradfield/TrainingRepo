@@ -1,0 +1,11 @@
+package com.emily.practicePackage;
+
+import com.emily.helloWorld.*;
+
+public class testOne {
+
+	public static void main (String[] args) {
+		printMessage();
+	}
+	
+}

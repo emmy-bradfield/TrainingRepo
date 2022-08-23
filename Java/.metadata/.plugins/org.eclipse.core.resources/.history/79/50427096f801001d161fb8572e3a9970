@@ -1,0 +1,20 @@
+package liskovSubstitution;
+
+public abstract class OneRoom extends Apartment{
+	public Integer bedrooms;
+	public Integer sqft;
+	
+	public abstract Integer getBedrooms();
+	
+	public  void setBedrooms() {
+		this.bedrooms = 1;
+	}
+	
+	public abstract Integer getSize();
+	
+	public abstract void setSize(Integer sqft);
+
+	protected abstract String getRoad();
+
+
+}

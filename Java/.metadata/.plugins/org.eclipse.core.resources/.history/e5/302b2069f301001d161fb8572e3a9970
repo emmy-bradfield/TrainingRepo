@@ -1,0 +1,21 @@
+package liskovSubstitution;
+
+public class Studio extends OneRoom {
+    private String road;
+	private int sqft;
+	private int bedrooms;
+
+	public Studio(String road, int sqft) {
+    	this.road = road;
+    	this.sqft = sqft;
+    }
+	
+	public int getBedrooms() {
+		this.bedrooms = OneRoom.getBedrooms();
+	}
+
+    @Override
+    public void setSquareFootage(int sqft) {
+        this.setSquareFootage(sqft);
+    }
+}

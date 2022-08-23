@@ -1,0 +1,18 @@
+package com.qa.helloworld;
+
+public class helloWorld {
+	
+	 public static void printMessage() {
+		 String message = "Hi there, Emily!";
+		 System.out.println(message);
+	 }
+	 
+	 public static void main(String[] args) {
+		 printMessage();
+		 
+		 DataTypes data = new DataTypes();
+		 String hello = new String();
+		 hello = data.withReturn();
+//		 System.out.println(hello);
+	 }
+}

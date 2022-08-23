@@ -1,0 +1,7 @@
+package interfacesegregation;
+
+public interface FlyingCreature {
+
+    public void fly();
+    
+}

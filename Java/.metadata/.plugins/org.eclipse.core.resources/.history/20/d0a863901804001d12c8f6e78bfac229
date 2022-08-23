@@ -1,0 +1,7 @@
+package dependencyinversion;
+
+public interface Developer {
+	
+	public void writeCode(String coding);
+
+}

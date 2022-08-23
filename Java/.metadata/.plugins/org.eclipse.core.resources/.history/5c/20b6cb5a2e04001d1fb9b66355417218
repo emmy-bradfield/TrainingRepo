@@ -1,0 +1,14 @@
+package com.qa.LearningJDBC;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Order {
+	Integer orderID;
+	Double orderAmount;
+	LocalDate orderDate;
+	Integer fk_productID;
+	Integer fk_customerID;
+	
+
+}

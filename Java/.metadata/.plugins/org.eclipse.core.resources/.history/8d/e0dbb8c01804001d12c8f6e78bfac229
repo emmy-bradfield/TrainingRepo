@@ -1,0 +1,11 @@
+package dependencyinversion;
+
+public class FrontendDeveloper implements Developer{
+
+	@Override
+	public void writeCode(String coding) {
+		System.out.println(coding);
+		
+	}
+
+}

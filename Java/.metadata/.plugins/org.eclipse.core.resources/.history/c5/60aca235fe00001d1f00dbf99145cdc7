@@ -1,0 +1,56 @@
+package garageChallenge;
+
+public abstract class Car extends Vehicle{
+	
+	// Attributes
+	String Make;
+	String Model;
+	Boolean Automatic;
+	Integer Age;
+	Integer CostOfWork;
+	
+	// Class Constructors
+	public Car() {
+	};
+	
+	public Car(Integer VehicleID, Integer Wheels, String Colour, Integer ManufactureYear, String Make, String Model, Boolean Automatic) {
+		super(VehicleID, Wheels, Colour, ManufactureYear);
+		this.Make = Make;
+		this.Model = Model;
+		this.Automatic = Automatic;
+	}
+	
+	// Getters and Setters
+	public String getMake() {
+		return Make;
+	}
+	
+	public String getModel() {
+		return Model;
+	}
+	
+	public Boolean getAutomatic() {
+		return Automatic;
+	}
+	
+	public void setMake(String Make) {
+		this.Make = Make;
+	}
+	
+	public void setModel(String Model) {
+		this.Model = Model;
+	}
+	
+	public void getAutomatic(Boolean Automatic) {
+		this.Automatic = Automatic;
+	}
+	
+
+	// Override Methods
+	@Override
+	public Integer getAge(Integer CurrentYear) {
+		Age = (CurrentYear - getManufactureYear());
+		return Age;
+	}
+
+}

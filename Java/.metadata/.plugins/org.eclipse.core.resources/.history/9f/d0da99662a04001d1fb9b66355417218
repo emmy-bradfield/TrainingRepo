@@ -1,0 +1,19 @@
+package com.qa.LearningJDBC;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Customer {
+	Integer customerID;
+	String customerName;
+	String customerEmail;
+	
+	List<Customer> customers = new ArrayList<>();
+	
+	public Customer(int customerID, String customerName, String customerEmail) {
+		this.customerID = customerID;
+		this.customerName = customerName;
+		this.customerEmail = customerEmail;
+	}
+
+}

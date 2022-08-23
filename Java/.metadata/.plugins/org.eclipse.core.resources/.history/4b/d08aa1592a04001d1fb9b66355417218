@@ -1,0 +1,14 @@
+package com.qa.LearningJDBC;
+
+public class Customer {
+	Integer customerID;
+	String customerName;
+	String customerEmail;
+	
+	public Customer(int customerID, String customerName, String customerEmail) {
+		this.customerID = customerID;
+		this.customerName = customerName;
+		this.customerEmail = customerEmail;
+	}
+
+}

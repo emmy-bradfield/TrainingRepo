@@ -1,0 +1,11 @@
+package com.qa.singleResponsibility;
+
+public class Mechanic {
+
+	private Object spoiler;
+
+	public void addSpoiler() {
+		J444CEB.setSpoiler(true);
+	}
+	
+}

@@ -1,0 +1,15 @@
+package com.qa.helloworld;
+
+public class EmilyTest {
+	
+	public static void functionName() {
+		String message =  "This line informs Java to create a string called 'message' consisting of this text";
+		System.out.Println(message);
+	}
+	
+	
+	public static void main (String[] args) {
+		functionName();
+	}
+
+}

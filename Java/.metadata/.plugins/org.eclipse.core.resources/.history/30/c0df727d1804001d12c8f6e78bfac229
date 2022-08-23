@@ -1,0 +1,7 @@
+package dependencyinversion;
+
+public class FrontendDeveloper {
+    public void writeJavaScript(){
+        System.out.println("JavaScript is used everywhere anyway.");
+    }
+}

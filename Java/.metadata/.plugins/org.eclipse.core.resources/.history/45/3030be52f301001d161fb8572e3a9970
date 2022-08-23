@@ -1,0 +1,10 @@
+package liskovSubstitution;
+
+public abstract class OneRoom extends Apartment{
+	private static Integer bedrooms = 0;
+	
+	public static Integer getBedrooms() {
+		return bedrooms;
+	}
+
+}

@@ -1,0 +1,17 @@
+package liskovSubstitution;
+
+public abstract class OneRoom extends Apartment{
+	private Integer bedrooms = 0;
+	private Integer sqft;
+	
+	public Integer getBedrooms() {
+		return bedrooms;
+	}
+	
+	public Integer getSize(Apartment property) {
+		sqft = property.getSquareFootage();
+		return sqft;
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+1656675927175	Rename type 'testOne'
+1656675974319	Rename package 'com.emily.practicePackage'
+1656675984923	Move compilation unit
+1656675991423	Delete element
+1656676054260	Rename type 'NamingConvention'
+1656676071638	Rename type 'DataTypes'
+1656676376298	Delete element
+1656676432381	Rename package 'com.emily.learningPathQA'
+1656683848753	Rename compilation unit 'Customer.java'
+1656684533419	Encapsulate field 'firstName'
+1656684599800	Encapsulate field 'email'
+1656684660879	Encapsulate field 'lastName'
+1656768890883	Rename type 'InputWithScanner'

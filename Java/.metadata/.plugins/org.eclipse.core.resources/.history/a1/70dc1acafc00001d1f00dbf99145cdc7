@@ -1,0 +1,26 @@
+package garageChallenge;
+
+public abstract class Vehicle {
+	
+	// Attributes
+	Integer VehicleID;
+	Integer Wheels;
+	String Colour;
+	Integer ManufactureYear;
+	
+	// Methods
+	public abstract Double getAge();
+	public abstract Double costOfWork();
+	
+	// Class Constructors
+	public Vehicle() {
+	}
+	
+	public Vehicle (Integer VehicleID, Integer Wheels, String Colour, Integer ManufactureYear) {
+		this.VehicleID = VehicleID;
+		this.Wheels = Wheels;
+		this.Colour = Colour;
+		this.ManufactureYear = ManufactureYear;
+	};
+
+}

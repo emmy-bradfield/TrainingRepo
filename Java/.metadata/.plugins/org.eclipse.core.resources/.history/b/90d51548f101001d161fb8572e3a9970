@@ -1,0 +1,7 @@
+package liskovSubstitution;
+
+public abstract class ManyRoom {
+	
+	public Integer bedrooms;
+
+}

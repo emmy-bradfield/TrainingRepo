@@ -1,0 +1,8 @@
+package liskovSubstitution;
+
+public class BedroomAdder {
+	public void addBedroom(ManyRoom property) {
+		property.setSquareFootage(property.getSquareFootage() + 40);
+
+	}
+}

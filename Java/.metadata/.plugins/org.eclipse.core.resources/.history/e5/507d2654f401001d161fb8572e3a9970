@@ -1,0 +1,14 @@
+package liskovSubstitution;
+
+public class BedroomAdder {
+	public void addBedroom(ManyRoom property) {
+		property.setSquareFootage(property.getSquareFootage() + 40);
+		property.setBedrooms(property.getBedrooms() + 1);
+		System.out.println("The " + property.getClass() + " now has " + property.getNumberOfBedrooms() + " bedrooms and is " + property.getSquareFootage() + " square feet.");
+	}
+	
+	public void makeMoreRoom(OneRoom property) {
+		property.setSquareFootage(property.getSquareFootage() + 40);
+		System.out.println("The " + property.getClass() + " still has " + property.getNumberOfBedrooms() + " bedrooms but is " + property.getSquareFootage() + " square feet.");
+	}
+}

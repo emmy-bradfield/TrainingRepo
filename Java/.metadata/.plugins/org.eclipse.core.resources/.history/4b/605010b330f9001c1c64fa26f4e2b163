@@ -1,0 +1,47 @@
+package com.emily.practicePackage;
+
+import java.io.PrintStream;
+
+public class testOne {
+	
+	public testOne(String[] args) {
+		intReturn();
+		booReturn();
+		chaReturn();
+		lonReturn();
+		floReturn();
+		strReturn();
+		voiReturn();
+		
+	}
+	
+	
+	public int intReturn() {
+		return 0;
+	}
+	
+	public boolean booReturn()  {
+		return true;
+	}
+	
+	public char chaReturn() {
+		return 'p';
+	}
+	
+	public long lonReturn() {
+		return 52L;
+	}
+	
+	public float floReturn() {
+		return 0.6F;
+	}
+	
+	public String strReturn() {
+		return "Hi, there";
+	}
+	
+	public void voiReturn() {
+		// no return
+	}
+
+}

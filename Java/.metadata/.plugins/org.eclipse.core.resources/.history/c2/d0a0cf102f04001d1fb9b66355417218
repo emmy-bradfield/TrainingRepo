@@ -1,0 +1,20 @@
+package com.qa.LearningJDBC;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Order {
+	Integer orderID;
+	Double orderAmount;
+	LocalDate orderDate;
+	Integer fk_productID;
+	Integer fk_customerID;
+	
+	List<Order> orders = new ArrayList<>();
+	
+	public Order(int orderID, double orderAmount, LocalDate orderDate, int fk_productID, int fk_customerID) {
+		
+	}
+	
+
+}

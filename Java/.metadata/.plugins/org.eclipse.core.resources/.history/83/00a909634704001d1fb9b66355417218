@@ -1,0 +1,14 @@
+
+public class SQLConnector {
+	
+	String localhost;
+	String username;
+	String password;
+	
+	public SQLConnector(String localhost, String username, String password) {
+		this.localhost = localhost;
+		this.username = username;
+		this.password = password;
+	}
+
+}

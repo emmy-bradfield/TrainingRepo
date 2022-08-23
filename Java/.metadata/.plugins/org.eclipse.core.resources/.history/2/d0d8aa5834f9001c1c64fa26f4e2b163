@@ -1,0 +1,25 @@
+package com.emily.learningPathQA;
+
+public class Lesson3NamingConventions {
+	public static interface descriptive {} //this meth
+	public static void doing() {
+		String variableNames = "nameOfVariable";
+		String tempVarNames = "t (temporary variable)";
+		String constantsEnums = "CONSTANTS_AND_ENUMS";
+		String genericTypeNames = "G (generic types)";
+		String Exceptions = "Exception";
+		String packageNames = "domanin.company.package";
+		String acronyms = "IFOA = In Full Or as Acronym";
+		System.out.println(variableNames);
+		System.out.println(tempVarNames);
+		System.out.println(constantsEnums);
+		System.out.println(genericTypeNames);
+		System.out.println(Exceptions);
+		System.out.println(packageNames);
+		System.out.println(acronyms);
+	}
+		
+	public static void main (String[] args) {
+		doing();
+	}
+}

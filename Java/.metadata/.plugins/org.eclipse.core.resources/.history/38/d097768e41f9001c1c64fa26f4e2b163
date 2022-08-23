@@ -1,0 +1,21 @@
+package com.emily.tutorialCodesQA;
+import java.util.random.*;
+
+public class Lesson3FlowOfControl {
+
+	public static void main (String[] args) {
+		System.out.println(rollDTwentyTwo());
+	}
+	
+	public static int rollDTwentyTwo() {
+		
+		int total = 0;
+		total += rollDTwenty();
+		total += rollDTwenty();
+		return total;
+	}
+	
+	public static int rollDTwenty() {
+		return new Random().nextInt(21);
+	}
+}

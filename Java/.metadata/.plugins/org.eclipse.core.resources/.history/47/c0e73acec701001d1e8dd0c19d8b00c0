@@ -1,0 +1,18 @@
+package optionals;
+
+import java.util.Optional;
+
+public class Runner {
+
+	public static void main(String[] args) {
+		String name;
+		if(Math.random() >=0.5) {
+			name = "Apple";
+		} else {
+			name = null;
+		}
+		Optional.of(name);
+
+	}
+
+}

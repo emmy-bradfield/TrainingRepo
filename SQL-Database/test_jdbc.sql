@@ -1,0 +1,31 @@
+CREATE database IF NOT EXISTS test_jdbc;
+USE test_jdbc;
+
+DROP TABLE IF EXISTS Orders;
+DROP TABLE IF EXISTS Products;
+DROP TABLE IF EXISTS Customers;
+
+CREATE TABLE IF NOT EXISTS Customers (
+customerID INT NOT NULL AUTO_INCREMENT,
+customerName VARCHAR(40) NOT NULL,
+customerEmail VARCHAR(50) NOT NULL,
+PRIMARY KEY (customerID)
+);
+
+CREATE TABLE IF NOT EXISTS Products (
+productID INT NOT NULL AUTO_INCREMENT,
+productName VARCHAR(20) NOT NULL,
+productCost DOUBLE NOT NULL,
+PRIMARY KEY (productID)
+);
+
+CREATE TABLE IF NOT EXISTS Orders (
+orderID INT NOT NULL AUTO_INCREMENT,
+orderAmount DOUBLE NOT NULL,
+orderDate DATE NOT NULL,
+fk_productID INT NOT NULL,
+fk_customerID INT NOT NULL,
+PRIMARY KEY (orderID),
+FOREIGN KEY (fk_productID) REFERENCES Products(productID),
+FOREIGN KEY (fk_customerID) REFERENCES Customers(customerID)
+);

@@ -1,0 +1,75 @@
+package com.qa.runner;
+
+import com.qa.singleResponsibility.Car;
+import com.qa.singleResponsibility.Driver;
+import com.qa.singleResponsibility.Mechanic;
+
+import liskovsubstitution.*;
+import openCloseAction.CasualGreeting;
+import openCloseAction.FormalGreeting;
+import openCloseAction.Greeter;
+import openCloseAction.Greeting;
+import openCloseAction.Speech;
+
+import interfacesegregation.*;
+
+public class Runner {
+
+	public static void singleResponsibility() {
+		Car J444CEB = new Car("silver", "Ford Focus", 92000);
+		Driver Emily = new Driver("Emily", 1000);
+		Emily.purchaseCar(J444CEB);
+		System.out.println(Emily.getName() + " purchased a " + J444CEB.carDetails());
+		Emily.drive(265, J444CEB);
+		System.out.println(Emily.getName() + " then drove it for " + Emily.getDrive() + " miles.");
+		Mechanic Dave = new Mechanic("Dave");
+		Dave.addSpoiler(J444CEB);
+		Dave.repaint("purple", J444CEB);
+		Dave.getCost();
+		System.out.println("The mechanic, " + Dave.getName() + ", added a spoiler and repainted " + Emily.getName()
+				+ "'s car. It cost £" + Dave.getCost());
+		System.out.println(Emily.getName() + " had £" + Emily.getMoney() + " and " + Dave.getName() + " cost £"
+				+ Dave.getCost() + ".");
+		Emily.payMechanic(Dave);
+		System.out.println("After paying " + Dave.getName() + ", " + Emily.getName() + " has £" + Emily.getMoney()
+				+ " and a " + J444CEB.carDetails());
+	}
+
+	public static void openClosed() {
+		/*
+		 * Speech formal = new FormalGreeting(); Greeter.sayHello(formal); Speech casual
+		 * = new CasualGreeting(); Greeter.sayHello(casual); Speech basic = new
+		 * Greeting(); Greeter.sayHello(basic);
+		 */
+	}
+
+	public static void liskovSubstitution() {
+		OneRoom roseHome = new Studio("Portswood Road", 200); ManyRoom emmyHome = new
+		Penthouse("Moreton Road", 500, 2); BedroomAdder moreRooms = new
+		BedroomAdder(); moreRooms.makeBigger(roseHome); moreRooms.addRoom(emmyHome);
+
+	}
+
+	public static void interfaceSegregation() {
+		Falcon falcon = new Falcon(2);
+		falcon.setCurrentLocation("in their nest");
+		System.out
+				.println("The falcon has " + falcon.getNumberOfEggs() + " eggs, and is " + falcon.getCurrentLocation());
+		falcon.layEggs();
+		System.out.println("The falcon has laid an egg, and now has " + falcon.getNumberOfEggs() + " eggs!");
+		falcon.fly();
+		System.out.println("The falcon takes flight, and is now " + falcon.getCurrentLocation());
+		Dodo dodo = new Dodo(0);
+		dodo.setCurrentLocation("in their nest");
+		System.out.println("The dodo has " + dodo.getNumberOfEggs() + " eggs and is " + dodo.getCurrentLocation());
+		dodo.layEggs();
+		System.out.println("The dodo has laid an egg, and now has " + dodo.getNumberOfEggs() + " egg!");
+		dodo.goExtinct();
+		System.out.println("Uh oh! The dodo went extinct and is now " + dodo.g);
+	}
+
+	public static void main(String[] args) {
+		interfaceSegregation();
+
+	}
+}

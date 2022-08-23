@@ -1,0 +1,80 @@
+package optionals;
+
+import java.util.Optional;
+
+public class Fruit {
+
+	String colour;
+	Integer quantity;
+	String name;
+
+	public Fruit() {
+	};
+
+	public Fruit(String colour, Integer quantity, String name) {
+		this.colour = colour;
+		this.quantity = quantity;
+		this.name = name;
+	}
+	
+	public String getName() {
+		return name;
+	}
+
+	public void optionalFruit() {
+		// The ofNullable function wraps around the object or variable and means that if
+		// it is null, Java won't throw an exception. We we just use Optional.of then
+		// Java will throw an exception whenever it is null. The code below shows a
+		// 50/50 chance of either the correct attributes (String, String, and Integer)
+		// being added to a new fruit or nothing being added. As the object Apple
+		// (fruit) cannot be null, Java would throw an exception, but now it doesn't.
+		// This is most useful for things like databases where data may be empty.
+		Fruit apple = new Fruit();
+		if (Math.random() >= 0.5) {
+			apple.name = "Apple";
+			apple.colour = "red";
+			apple.quantity = 1;
+		} else {
+			apple.name = null;
+			apple.colour = null;
+			apple.quantity = null;
+		}
+		System.out.println("Optional created:");
+		System.out.println(Optional.ofNullable(apple.name));
+		System.out.println("");
+
+		// Next we look at the use of the isPresent() function. We can create a new
+		// variable or object as an optional by first 'wrapping' the class name with
+		// 'Optional' and then specifying the instance as an 'Optional.of'. From
+		// here, optional can now cast to the object and tell us if it is present as a
+		// simple boolean, which we print out to look at. The code below shows creating
+		// a new instance of Fruit called pear, which is done by wrapping it in the
+		// optional class, and then asking the console to print out the result of the
+		// isPresent() test. As above, we have used the Math.random function to
+		// determine outcome - either we create an Optional Fruit called pear (which
+		// should return true, or the Optional Fruit pear is in fact empty (which should
+		// return false).
+		if (Math.random() >= 0.5) {
+			Optional<Fruit> pear = Optional.of(new Fruit("green", 1, "Pear"));
+			System.out.println("Optional<Fruit> pear created:");
+			System.out.println(pear.isPresent());
+		} else {
+			Optional<Fruit> pear = Optional.empty();
+			System.out.println("Was optional<Fruit> pear created:");
+			System.out.println(pear.isPresent());
+		}
+		System.out.println("");
+		
+		// 
+		Fruit banana = new Fruit("yellow", 1, "Banana");
+		if (Math.random() >=0.5) {
+			Optional<Fruit> orange = Optional.of(new Fruit("orange", 1, "Orange"));
+			System.out.println("What fruit was last made?");
+			System.out.println(orange.orElse(banana));
+		} else {
+			Optional<Fruit> orange = Optional.empty();
+			System.out.println("What fruit was last made?");
+			System.out.println(orange.orElse(banana));
+		}
+	}
+}

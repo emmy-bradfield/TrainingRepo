@@ -1,0 +1,10 @@
+package liskovSubstitution;
+
+public class Studio extends OneRoom {
+    public Studio() {}
+
+    @Override
+    public void setSquareFootage(int sqft) {
+        this.setSquareFootage(sqft);
+    }
+}

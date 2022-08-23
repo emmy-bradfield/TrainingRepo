@@ -1,0 +1,5 @@
+package openCloseAction;
+
+public class Greeting implements Speech{
+
+}

@@ -1,0 +1,15 @@
+package com.qa.hashmaps;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MorseTranslator {
+	Map<String, String> morse = new HashMap<>();
+	
+	public void addToMap() {
+	morse.put("a", ".-");
+	morse.put("b", "-...");
+	morse.put("", "");
+	
+
+}

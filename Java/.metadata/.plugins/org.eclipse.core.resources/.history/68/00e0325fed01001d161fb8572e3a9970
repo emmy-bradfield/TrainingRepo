@@ -1,0 +1,13 @@
+package openCloseAction;
+
+public class Greeting extends Greeter implements Speech{
+
+	private String message;
+	
+	@Override
+	public String sayGreeting() {
+		message = "Hello";
+		return message;
+	}
+
+}

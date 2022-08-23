@@ -1,0 +1,24 @@
+package com.qa.singleResponsibility;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Driver {
+	
+	List<Car> driveway = new ArrayList<>();
+	private String name;
+	
+	public Driver (String name) {
+		this.name=name;
+	}
+
+	// functionality
+	public void purchaseCar(Car car) {
+		driveway.add(car);
+	}
+	
+	public void drive(int milesDriven, Car car) {
+		car.setMileage(car.getMileage()+milesDriven);
+	}
+
+}

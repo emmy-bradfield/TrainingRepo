@@ -1,0 +1,13 @@
+package com.emily.tutorialCodesQA;
+import com.emily.tutorialCodesQA.Customer;
+
+public class Runner {
+	
+	public static void main(String[] args) {
+		Customer James = new Customer("james-bradfield@gmail.com", "Welcome123", "James", "Bradfield", "80", "W13 9EB");
+		System.out.print(James.getFirstName());
+		System.out.print(" ");
+		System.out.print(James.getLastName());
+		System.out.println(James.getEmail());
+	}
+}

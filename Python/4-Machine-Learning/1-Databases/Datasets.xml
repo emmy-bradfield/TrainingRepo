@@ -1,0 +1,25 @@
+<sales>
+    <sale id="0081" date="2022-07-30">
+        <customer id="1" name="Emily Bradfield" />
+        <products>
+            <product>
+                <product id="7" name="white t-shirt" price="£9.99">
+                    <qty_purchased>1</qty_purchased>    
+                </product>
+            </product>
+        </products>
+        <total>9.99</total>
+    </sale>
+    <sale>
+        <customer id="2" name="James Bradfield" />
+        <products>
+            <product id="2" name="grey hoodie" price="£28.49">
+                <qty_purchased>1</qty_purchased>
+            </product>
+            <product id="9" name="black trainer socks" price="£2.00">
+                <qty_purchased>3</qty_purchased>
+            </product>
+        </products>
+        <total>32.49</total>
+    </sale>
+</sales>

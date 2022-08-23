@@ -1,0 +1,44 @@
+package garageChallenge;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Garage {
+	
+	// Attributes
+	static Integer WheelsReplace;
+	static Boolean EngineFault;
+	static Boolean Repaint;
+	
+	// Getters and Setters
+	public static Integer getWheelsReplace() {
+		return WheelsReplace;
+	}
+	
+	public static Boolean getEngineFault() {
+		return EngineFault;
+	}
+	
+	public static Boolean getRepaint() {
+		return Repaint;
+	}
+	
+	public void setWheelsRepalce(Integer WheelsRepalce) {
+		this.WheelsReplace=WheelsRepalce;
+	}
+	
+	public void setEngineFault(Boolean EngineFault) {
+		this.EngineFault = EngineFault;
+	}
+	public void setRepaint(Boolean Repaint) {
+		this.Repaint = Repaint;
+	}
+	
+	
+	static List<Vehicle> inGarage = new ArrayList<Vehicle>();
+	
+	public List<Vehicle> getGarage() {
+		return inGarage;
+	}
+	
+}

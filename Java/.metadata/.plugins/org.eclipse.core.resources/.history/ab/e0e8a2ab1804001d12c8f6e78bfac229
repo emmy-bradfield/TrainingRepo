@@ -1,0 +1,12 @@
+package dependencyinversion;
+
+public class BackendDeveloper implements Developer {
+	private String coding;
+
+	@Override
+	public void writeCode(String coding) {
+		this.coding = coding;
+		System.out.println(coding);
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.qa.singleResponsibility;
+
+public class Mechanic {
+
+
+	public void addSpoiler(Car car) {
+		car.setSpoiler(true);
+	}
+	
+	public void repaint(String colour, Car car) {
+		car.setColour(colour);
+	}
+	
+}

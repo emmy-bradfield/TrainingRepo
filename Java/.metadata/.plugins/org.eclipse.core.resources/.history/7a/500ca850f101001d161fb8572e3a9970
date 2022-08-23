@@ -1,0 +1,12 @@
+package liskovSubstitution;
+
+public abstract class ManyRoom {
+	
+	public Integer bedrooms;
+
+	public void setSquareFootage(int sqft) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.qa.dependencyinversion;
+
+public class FrontendDeveloper implements Developer{
+	private String coding = "JavaScript is used everywhere else";
+
+	@Override
+	public String develop() {
+		return coding;
+		
+	}
+
+}

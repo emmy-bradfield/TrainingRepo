@@ -1,0 +1,9 @@
+package com.emily.helloWorld;
+
+public class NamingConvention {
+	public interface descriptive {}
+	public void doing() {
+		String simpleName = "A variable";
+		System.out.println(simpleName);
+	}
+}

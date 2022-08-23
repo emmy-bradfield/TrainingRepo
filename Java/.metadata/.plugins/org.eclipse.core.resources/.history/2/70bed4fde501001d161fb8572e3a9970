@@ -1,0 +1,11 @@
+package com.qa.singleResponsibility;
+
+public class Driver {
+
+	// functionality
+	public void drive(int milesDriven) {
+		Car myCar = new Car("silver", );
+		myCar.setMileage(myCar.getMileage()+milesDriven);
+	}
+
+}

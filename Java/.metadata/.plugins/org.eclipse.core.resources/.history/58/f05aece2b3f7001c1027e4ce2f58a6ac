@@ -1,0 +1,26 @@
+package com.qa.helloworld;
+
+public class EmilyTest {
+	
+	public static void functionName() {
+		String message =  "This line informs Java to create a string called 'message' consisting of this text";
+		System.out.println(message);
+	}
+	
+	public static void messageTwo () {
+		String message2 = "Remember to create a second section defining main, aka telling the console to run the function";
+		System.out.println(message2); 
+	}
+	
+	public static void printString(String message) {
+		System.out.println(message);
+	}
+	
+	public static void main (String[] args) {
+		functionName();
+		messageTwo();
+		printString("Or you can teach the console to print strings, then type the message each time in main");
+	}
+	
+
+}

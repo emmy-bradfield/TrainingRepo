@@ -1,0 +1,16 @@
+package com.qa.singleResponsibility;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Driver {
+	
+	List<Car> driveway = new ArrayList<>();
+
+	// functionality
+	public void drive(int milesDriven) {
+		Car myCar = new Car("silver", "Ford Focus", 92000);
+		myCar.setMileage(myCar.getMileage()+milesDriven);
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.qa.dependencyinversion;
+
+import java.util.List;
+
+public class Project {    
+	private List<Developer> developers;
+	
+    public Project(List<Developer> devs) {
+    	this.developers = devs;
+    }
+    
+    public void implement() {
+    	developers.add(new BackendDeveloper());
+        developers.add(new FrontendDeveloper());
+    	developers.forEach(d->d.develop());
+    }
+
+}
+

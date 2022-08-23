@@ -1,0 +1,6 @@
+package com.qa.hashmaps;
+
+public class MorseTranslator {
+	Map<String, String> morseCode = new HashMap<>();
+
+}

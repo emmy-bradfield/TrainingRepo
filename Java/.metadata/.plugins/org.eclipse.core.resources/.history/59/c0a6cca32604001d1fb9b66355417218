@@ -1,0 +1,11 @@
+package com.qa.LearningJDBC;
+import java.sql.Connection;
+
+public class Main {
+
+	public static void main(String[] args) {
+		DatabaseConnecter test = new DatabaseConnecter("root", "Apple.Bob1");
+		Connection con = test.getConnection();
+	}
+
+}

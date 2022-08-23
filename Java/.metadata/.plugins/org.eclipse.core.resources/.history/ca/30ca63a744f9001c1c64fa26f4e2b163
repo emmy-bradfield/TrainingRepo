@@ -1,0 +1,15 @@
+package com.emily.tutorialCodesQA;
+
+public class Lesson4ConstructorsAndAccess {
+	private String name;
+	private String pathway;
+	
+	public Lesson4ConstructorsAndAccess() {
+		this.name = name;
+		this.pathway = pathway;
+	}
+	
+	public static void main(String[] args) {
+		Lesson4ConstructorsAndAccess bob = new Lesson4ConstructorsAndAccess("Bob", "Software Development");
+	}
+}

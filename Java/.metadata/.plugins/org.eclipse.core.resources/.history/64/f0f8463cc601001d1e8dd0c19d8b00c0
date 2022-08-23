@@ -1,0 +1,10 @@
+package testing;
+
+public class Customer {
+
+	public Object getUniqueId() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

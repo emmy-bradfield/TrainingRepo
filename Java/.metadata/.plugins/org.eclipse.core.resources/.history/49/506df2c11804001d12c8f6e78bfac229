@@ -1,0 +1,11 @@
+package dependencyinversion;
+
+public class Project {
+    private BackendDeveloper back = new BackendDeveloper();
+    private FrontendDeveloper front = new FrontendDeveloper();
+
+    public void implement() {
+        back.writeCode();
+        front.writeCode();
+    }
+}

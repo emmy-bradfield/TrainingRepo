@@ -1,0 +1,19 @@
+package com.qa.LearningJDBC;
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class Main {
+
+	public static void main(String[] args) {
+		DatabaseConnecter test = new DatabaseConnecter("root", "Apple.Bob1");
+		
+		try (Connection con = test.getConnection();
+			Statement state = con.createStatement();) {
+			state.executeUpdate("");
+			state.executeQuery("");
+			} catch (SQLException e) {
+			//TODO
+			e.printStackTrace();
+			}
+}
