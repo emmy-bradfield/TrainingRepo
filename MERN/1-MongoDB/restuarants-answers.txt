@@ -1,0 +1,15 @@
+db.restuarants.find()
+
+db.restuarants.find({}, {restuarant_id:true, name:true, borough:true, cuisine:true})
+
+db.restuarants.find({}, {_id:false, restuarant_id:true, name:true, borough:true, cuisine:true})
+
+db.restuarants.find({}, {_id:false, restuarant_id:true, name:true, borough:true, address: {zipcode:true}})
+
+db.restuarants.find({borough:"Bronx"}).limit(5)
+
+db.restuarants.find({borough:"Bronx"}).skip(5).limit(5)
+
+db.restaurants.find({grades : { $elemMatch:{"score":{$gt : 90}}}});
+
+db.restaurants.find({grades : { $elemMatch:{"score":{$gt : 80 , $lt :100}}}});

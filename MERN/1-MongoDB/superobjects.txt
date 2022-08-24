@@ -1,0 +1,109 @@
+db.superheros.insertOne({
+    "name": "Peter Parker",
+    "alias": "spiderman",
+    "power": "shoots spiderwebs",
+    "career": "journalist"
+})
+
+db.superheros.insertOne({
+    "name": "Bruce Wayne",
+    "alias": "batman",
+    "power": "rich and broody"
+})
+
+db.superheros.insertOne({
+    "name": "Bill Nye",
+    "alias": "science guy",
+    "power": "science",
+    "other": "guy"
+})
+
+db.superheros.insertOne({
+    "name": "Clark Kent",
+    "alias": "superman",
+    "power": "is an alien",
+})
+
+db.supervillians.insertOne({
+    "alias": "the joker",
+    "MO": "being photographed and editing on 'deep' text to be shared on reddit by people who think they relate",
+    "fun fact": "cannonically socialist"
+})
+db.supervillians.insertOne({
+    "alias": "pengiun",
+    "MO": "waddle",
+    "fun fact": "not a villian; just an actual penguin who got lost"
+})
+db.supervillians.insertOne({
+    "alias": "climate change",
+    "MO": "burning, drowning, freezing, starving, poisoning, etc...",
+    "fun fact": "none: is not fun",
+    "favourite colour": "blue"
+})
+db.supervillians.insertOne({
+    "alias": "the peng- wait...",
+    "MO": "isn't this just the same penguin?",
+    "fun fact": "it is! I knew it wa-",
+    "hey! don't you": "waddle away from me!"
+})
+
+db.subparheros.insertOne({
+    "name": "Mr Man",
+    "power": "is man",
+    "origin": "none"
+})
+db.subparheros.insertOne({
+    "name": "microwave",
+    "power": "reheats food, causes cancer",
+    "beep":"boop"
+})
+db.subparheros.insertOne({
+    "name": "the peng-loose",
+    "power": "looses a lot",
+    "appearance": "like the penguin but wear glasse- HEY! NOT AGAIN!"
+})
+db.subparheros.insertOne({
+    "name": "cheese",
+    "power": "10d6 poison damage all creatures within 20ft if activated by a character with 'lactose interlorance'",
+    "colour": "yellow",
+    "scent": "cheesey"
+})
+
+db.superheros.find({name:true, _id:false})
+db.supervillians.find({alias:"penguin"}, {_id:false, MO:true})
+
+db.subparheros.insertOne({
+    name: "Charles",
+    power: "Scottish",
+    colour: "yes",
+    pets: ["Dougal", "Florence", "Jimmy"]
+})
+
+db.subparheros.insertOne({
+    name: "Charles 2",
+    power: "still Scottish",
+    colour: "yes",
+    pets: {
+        name: "Dougal",
+        type: "dog"
+    }
+})
+
+db.subparheros.insertOne({
+    name: "Charles 3",
+    power: "still Scottish",
+    colour: "yes",
+    pets: [{
+        name: "Dougal",
+        type: "dog"
+    }, {
+        name: "Florence",
+        type: "dog"
+    }, {
+        name: "Jimmy",
+        type: "cat"
+    }]
+})
+
+db.subparheros.find({pets: "Dougal"}, {name:true, _id:false})
+db.subparheros.find({pets: [name: "Dougal"]}, {name:true, _id:false})
