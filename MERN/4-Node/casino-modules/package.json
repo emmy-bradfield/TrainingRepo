@@ -1,0 +1,11 @@
+{
+  "name": "index",
+  "version": "1.0.0",
+  "description": "index package for casino",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Emily Bradfield",
+  "license": "ISC"
+}
