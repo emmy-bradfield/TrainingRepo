@@ -1,0 +1,187 @@
+html{
+    max-width: 100%;
+}
+
+body{
+    background-color: white;
+    background-image: linear-gradient(to bottom right, rgb(58, 58, 58), lightgrey);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+header{
+    background-color:  rgb(175, 153, 209);
+    box-shadow: 5px 10px 20px 5px rgba(104, 104, 104, 0.473) inset;
+    display: block;
+}
+
+nav{
+    background-color: rgba(130, 75, 219, 0.438);
+    margin:0em;
+    padding: 0.2em;
+    box-shadow: 5px 10px 20px 5px lightgrey inset;
+}
+
+h2{
+    margin-left: 0.5em;
+}
+
+ul{
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+}
+
+li{
+    padding: 0.5em;
+    line-height: 1em;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 0.5em;
+}
+
+a:hover{
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.dropdown-item{
+    letter-spacing: 0;
+}
+
+.img-s{
+    max-width: 3vw;
+}
+
+.title{
+    max-width: 100%;
+    display: inline-flex;
+    line-height: 1em;
+    margin: 0.5em;
+    padding: 0.5em;
+    align-content: baseline;
+}
+
+.header-logo{
+    max-width: 3vw;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+main{
+    background-color: aliceblue;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 3em;
+    padding: 2em;
+    border-radius: 15px;
+    max-width: 70%;
+    margin-bottom: 3em;
+}
+
+article{
+    margin: 0.5em;
+    padding: 1.5em;
+}
+
+h6{
+    font-size: large;
+    width: 50%;
+    margin-bottom: 0em;
+}
+
+.img-m{
+    max-width: 15vw;
+    max-height: 15vw;
+    border: 8px groove rgb(177, 171, 190);
+    margin-left:1.5em;
+    float: right;
+}
+
+p{
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+.table-border{
+    align-items: center;
+    border: 2px solid black;
+    margin-top: 1em;
+}
+
+th{
+    padding: 0.5em;
+    border: 2px solid black;
+    background-color: rgb(147, 178, 235);
+}
+
+.td-border{
+    padding: 0.5em;
+    border: 2px solid black;
+}
+
+.img-xs{
+    max-width: 2vw;
+}
+
+.structure{
+    border: 0 0 0;
+}
+
+.bullets{
+    list-style-type: disc;
+}
+
+.simple{
+    width: 100%;
+    font-style: italic;
+}
+
+.expand{
+    border: 0;
+    border-radius: 5px;
+    max-width: 100vw;
+    background-color: inherit;
+    font-size: medium;
+}
+
+.stretch{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.em2{
+    font-weight: bold;
+    font-style: normal;
+}
+
+.btn-xl{
+    width: fit-content;
+    font-size: large;
+    line-height: 0.5em;
+    border: none;
+    background-color: inherit;
+}
+
+.right-align{
+    display: inline-flex;
+    justify-content: flex-end;
+    margin:0;
+    padding:0;
+}
+
+.simple-list {
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+}

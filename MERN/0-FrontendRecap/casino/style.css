@@ -1,0 +1,185 @@
+@font-face {
+    font-family: old-fancy;
+    src: url(./assets/ELEPHNTI.TTF);
+}
+
+@font-face {
+    font-family: old-fancy2;
+    src: url(./assets/ELEPHNT.TTF);
+}
+
+body {
+    background-color: rgb(47, 25, 54);
+    background-image: linear-gradient(to bottom right, rgb(47, 25, 54), black);
+    width: 100%;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    height: 12vh;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5em;
+}
+
+h4 {
+    font-family: old-fancy;
+    font-weight: lighter;
+    font-size: xx-large;
+    color: rgba(236, 182, 46, 0.6);
+    text-shadow: 2px 2px 3px rgba(145, 108, 44, 0.1)
+}
+
+main {
+    height: 78vh;
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#intro{
+    display: inline-flex;
+    justify-content: center;
+}
+
+.container {
+    width: 45%;
+    height: fit-content;
+    background-color: rgba(255, 235, 205, 0.514);
+    border-radius: 10px;
+    margin-top: 3em;
+    display: inline-flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+h5 {
+    font-family: old-fancy2;
+    color: rgb(185, 49, 0);
+    text-align: center;
+    padding: 1em;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    font-size: x-large;
+    text-shadow: 2px 2px 3px rgba(145, 108, 44, 0.1)
+}
+
+input {
+    margin: 1em;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.418);
+    width: 50%;
+    height: fit-content;
+}
+
+button {
+    height: fit-content;
+    width: fit-content;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: crimson;
+    box-shadow: 2px 5px 5px 2px rgba(255, 255, 255, 0.568) inset;
+}
+
+button:hover {
+    height: fit-content;
+    width: fit-content;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: crimson;
+    box-shadow: 2px 5px 5px 2px rgba(255, 255, 255, 0.274) inset;
+}
+
+button:active {
+    height: fit-content;
+    width: fit-content;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: crimson;
+    box-shadow: 2px 5px 5px 2px rgba(75, 75, 75, 0.568) inset;
+}
+
+.wide {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+    ;
+}
+
+footer {
+    height: 10vh;
+    font-size: x-small;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    color: rgba(169, 169, 169, 0.493);
+    align-content: center;
+    flex-direction: column;
+    padding: 0.2em;
+}
+
+div.fadein {
+    -webkit-animation: fade 2s;
+    animation: fade 2s;
+    opacity: 1;
+}
+
+div.fadeout {
+    -webkit-animation: fade 2s reverse;
+    animation: fade 2s reverse;
+    opacity: 0;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.chunk{
+    display: block;
+    padding: 2em;
+}
+
+.card{
+    padding: 2em;
+}
+
+.end{
+    font-family: old-fancy2;
+    font-weight: lighter;
+    font-size: large;
+    color: rgba(236, 182, 46, 0.6);
+    text-shadow: 2px 2px 3px rgba(145, 108, 44, 0.1);
+    margin-top: 0em;
+}
+
+.center-div {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    align-content: center;
+    align-items: center;
+}

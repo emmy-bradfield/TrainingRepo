@@ -1,0 +1,116 @@
+body{
+    margin-top: 1em;
+    width: 100%;
+}
+
+header{
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+button{
+    margin: 1em;
+}
+
+.btn{
+    border: 1px solid black;
+    box-shadow: 1px 2px 5px 1px lightblue inset;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.submit{
+    margin-left: 0.5em;
+    margin-top: 0;
+    height: fit-content;
+    width: fit-content;
+    padding:0.5em;
+}
+
+div{
+    display: inline-flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 1em;
+}
+
+h6{
+    margin-bottom:0em;
+    line-height: 1.9em;
+    font-size: large;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 1em;
+}
+
+input{
+    height: fit-content;
+    padding: 0.5em;
+    width: 40vw;
+    border: 1px solid black;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+em{
+    color: darkgrey;
+}
+
+#sqnOut{
+    display: block;
+}
+
+img{
+    max-width: 40vw;
+    max-height: 40vw;
+    margin-bottom: 2em;
+    margin-top:2em;
+}
+
+.cookieDiv {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 4em;
+    margin-right: 4em;
+    margin-top: 0em;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: fit-content;
+    justify-content: flex-start;
+}
+
+#div{
+    width:fit-content;
+    margin:0;
+    height:fit-content;
+    padding: 0;
+    flex-direction: column;
+}
+
+.smaller{
+    width: fit-content;
+    margin:1em;
+}
+
+h2{
+    font-size: small;
+    text-align: center;
+    border: 1px solid black;
+    padding: 1em;
+}
+
+.center-ish{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}

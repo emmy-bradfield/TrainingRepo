@@ -1,0 +1,8 @@
+I want you to make for me a casino themed webpage. 
+
+Blackjack - Oneplayer. User starts the game, and draws one card
+After this the user can choose whether to draw or fold.
+Once the player has lost (gone above 21) they can no longer play the game
+
+Second Player - Choose a random card and when the player is ready to Fold or go Bust
+Then the Second players result is unveiled

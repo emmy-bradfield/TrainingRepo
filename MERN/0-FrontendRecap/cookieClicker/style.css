@@ -1,0 +1,59 @@
+body{
+    background-color: skyblue;
+    background-image: linear-gradient(to bottom right lightskyblue);
+    width: 100%;
+}
+
+header{
+    height: 12vh;
+    background-color: dodgerblue;
+    box-shadow: 5px 10px 10px 5px rgba(135, 207, 235, 0.555) inset;
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    color: white;
+}
+
+main{
+    height: 76vh;
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+
+div{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 2em;
+}
+
+img{
+    max-width: 70%;
+    max-height: 70%;
+    margin-left: 3em;
+}
+
+footer{
+    border-top: 2px groove dodgerblue;
+    height: 12vh;
+    background-color: rgba(0, 139, 139, 0.658);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+h6{
+    margin-top:0.5em;
+}
+
+em{
+    margin:0;
+    font-weight: normal;
+}
+
+a{
+    color:aliceblue;
+}
