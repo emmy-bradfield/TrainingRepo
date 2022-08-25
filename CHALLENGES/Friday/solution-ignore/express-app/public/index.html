@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+  <h1>Express Application</h1>
+  <input type="text" id="inputName" placeholder="enter item name to create" />
+  <button type="button" id="buttonCreate">POST</button>
+  <ul id="listOutput"></ul>
+  <hr/>
+  <h2>Express Challenge</h2>
+  <!-- in index.html add three new elements: an input for ID, a button for 'GET One', and a div to output the data -->
+  <input type="number" id="inputID" placeholder="enter id of item to get" />
+  <button type="button" id="buttonReadOne">GET One</button>
+  <div id="singleOutput"></div>
+
+  <hr/>
+  <!-- finish building the front-end by including a way to update and delete items -->
+  <h2>Update</h2>
+  <input type="number" id="inputUpdateID" placeholder="enter id of item to update" />
+  <input type="text" id="inputUpdateName" placeholder="enter name of item to update" />
+  <button type="button" id="buttonUpdate">PUT</button>
+  <hr/>
+  <h2>Delete</h2>
+  <input type="number" id="inputDeleteID" placeholder="enter id of item to delete" />
+  <button type="button" id="buttonDelete">DELETE</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
