@@ -1,0 +1,233 @@
+============================================= 1) Create a database ==================================================
+
+
+use animals
+
+
+=====================================================================================================================
+
+
+
+========================= 2) Insert three collections (one general, and two specific) ===============================
+
+
+db.createCollection("all")
+db.createCollection("mammals")
+db.createCollection("fish")
+
+
+=====================================================================================================================
+
+
+
+================ 3) Insert five documents into each, with at least three having nested documents ====================
+
+
+FISH 
+
+db.fish.insertOne(
+    {
+        species: "clown fish",
+        habitat: "warm waters with sheltered reefs or lagoons",
+        appearance:
+            {"colour(s)" : "orange and white",
+            "maxsize": 17,
+            "weight": 0.23}
+    }
+)
+
+db.fish.insertOne(
+    {
+        species: "koi fish",
+        habitat: "freshwater"
+    }
+)
+
+db.fish.insertOne(
+    {
+        species: "angelfish",
+        habitat: "freshwater",
+        appearance : 
+        {
+            "colour(s)" : "orange; red; white",
+            "maxsize": 15,
+            "weight": 0.91
+        }
+    }
+)
+
+db.fish.insertOne(
+    {
+        species: "blob fish",
+        habitat: "deep sea",
+        appearance: {
+            "colour(s)" : "light peach",
+            "maxsize": 30,
+            "weight": 9.00
+        }
+    }
+)
+
+db.fish.insertOne(
+    {
+        species: "siamese fighting fish",
+        habitat: "fresh water"
+    }
+)
+
+
+MAMMALS 
+
+db.mammals.insertOne(
+    {
+        species: "domestic cat",
+        habitat: "urban and suburban areas",
+        appearance:
+            {"fur" : true,
+            "maxsize": 46,
+            "weight": 4.5}
+    }
+);
+
+db.mammals.insertOne(
+    {
+        species: "wolf",
+        habitat: "forests, plains"
+    }
+);
+
+db.mammals.insertOne(
+    {
+        species: "silverback gorilla",
+        habitat: "tropical",
+        appearance : 
+        {
+            "fur" : true,
+            "maxsize": 150,
+            "weight": 181
+        }
+    }
+);
+
+db.mammals.insertOne(
+    {
+        species: "human",
+        habitat: "land",
+        appearance: {
+            "fur" : false,
+            "maxsize": 200,
+            "weight": 100
+        }
+    }
+);
+
+db.mammals.insertOne(
+    {
+        species: "black bear",
+        habitat: "woodland, forests"
+    }
+);
+
+ALL 
+
+db.all.insertOne(
+    {
+        species: "clown fish",
+        habitat: "warm waters with sheltered reefs or lagoons",
+        appearance:
+            {"colour(s)" : "orange and white",
+            "maxsize": 17,
+            "weight": 0.23}
+    }
+)
+
+db.all.insertOne(
+    {
+        species: "koi fish",
+        habitat: "freshwater"
+    }
+)
+
+db.all.insertOne(
+    {
+        species: "angelfish",
+        habitat: "freshwater",
+        appearance : 
+        {
+            "colour(s)" : "orange; red; white",
+            "maxsize": 15,
+            "weight": 0.91
+        }
+    }
+)
+
+db.all.insertOne(
+    {
+        species: "blob fish",
+        habitat: "deep sea",
+        appearance: {
+            "colour(s)" : "light peach",
+            "maxsize": 30,
+            "weight": 9.00
+        }
+    }
+)
+
+db.all.insertOne(
+    {
+        species: "siamese fighting fish",
+        habitat: "fresh water"
+    }
+)
+
+db.all.insertOne(
+    {
+        species: "domestic cat",
+        habitat: "urban and suburban areas",
+        appearance:
+            {"fur" : true,
+            "maxsize": 46,
+            "weight": 4.5}
+    }
+);
+
+db.all.insertOne(
+    {
+        species: "wolf",
+        habitat: "forests, plains"
+    }
+);
+
+db.all.insertOne(
+    {
+        species: "silverback gorilla",
+        habitat: "tropical",
+        appearance : 
+        {
+            "fur" : true,
+            "maxsize": 150,
+            "weight": 181
+        }
+    }
+);
+
+db.all.insertOne(
+    {
+        species: "human",
+        habitat: "land",
+        appearance: {
+            "fur" : false,
+            "maxsize": 200,
+            "weight": 100
+        }
+    }
+);
+
+db.all.insertOne(
+    {
+        species: "black bear",
+        habitat: "woodland, forests"
+    }
+);
+
+=====================================================================================================================
