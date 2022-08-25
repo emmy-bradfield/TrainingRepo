@@ -1,60 +1,125 @@
 1
-db.restaurants.find()
+db.restaurants.find(
+)
 
 2
-db.restaurants.find({}, {restuarant_id:true, name:true, borough:true, cuisine:true})
+db.restaurants.find(
+    {
+    }, 
+    {
+        restuarant_id:true, 
+        name:true, 
+        borough:true, 
+        cuisine:true
+    }
+)
 
 3
-db.restaurants.find({}, {_id:false, restuarant_id:true, name:true, borough:true, cuisine:true})
+db.restaurants.find(
+    {
+    },
+    {
+        _id:false, 
+        restuarant_id:true, 
+        name:true, 
+        borough:true, 
+        cuisine:true
+    }
+)
 
 4
-db.restaurants.find({}, {_id:false, restuarant_id:true, name:true, borough:true, address: {zipcode:true}})
+db.restaurants.find({
+    },
+    {
+        _id:false, 
+        restuarant_id:true, 
+        name:true, 
+        borough:true, 
+        address: {zipcode:true}
+    }
+)
 
 5
-db.restaurants.find({borough:"Bronx"})
+db.restaurants.find(
+    {
+        borough:"Bronx"
+    }
+)
 
 6
-db.restaurants.find({borough:"Bronx"}).limit(5)
+db.restaurants.find(
+    {
+        borough:"Bronx"
+    }
+).limit(5)
 
 
 7
-db.restaurants.find({borough:"Bronx"}).skip(5).limit(5)
+db.restaurants.find(
+    {
+        borough:"Bronx"
+    }
+).skip(5).limit(5)
 
 
 8
-db.restaurants.find({grades : { $elemMatch:{"score":{$gt : 90}}}})
+db.restaurants.find(
+    {
+        grades : { $elemMatch:{"score":{$gt : 90}}}
+    }
+)
 
 
 9
-db.restaurants.find({grades : { $elemMatch:{"score":{$gt : 80 , $lt :100}}}})
+db.restaurants.find(
+    {
+        grades : { $elemMatch:{"score":{$gt : 80 , $lt :100}}}
+    }
+)
 
 10
-db.restaurants.find({"address.coord" : {$lt : -95.754168}})
+db.restaurants.find(
+    {
+        "address.coord" : {$lt : -95.754168}
+    }
+)
 
 11
-db.restaurants.find({
-    "cusine" : {$ne: "American"},
-    "grades.score" : {$gt: 70},
-    "address.coord" : {$lt : -65.754168}
-})
+db.restaurants.find(
+    {
+        "cusine" : {$ne: "American"},
+        "grades.score" : {$gt: 70},
+        "address.coord" : {$lt : -65.754168}
+    }
+)
 
 12
-db.restaurants.find({
-    "cusine" : {$ne: "American"},
-    "grades.score" : {$gt: 70},
-    "address.coord" : {$lt : -65.754168}
-})
+db.restaurants.find(
+    {
+        "cusine" : {$ne: "American"},
+        "grades.score" : {$gt: 70},
+        "address.coord" : {$lt : -65.754168}
+    }
+)
 
 13
-db.restaurants.find({
-    "cusine" : {$ne : "American"},
-    "grades.grade" : "A",
-    "borough" : {$ne : "Brooklyn"}
-}).sort({"cusine": -1})
+db.restaurants.find(
+    {
+        "cusine" : {$ne : "American"},
+        "grades.grade" : "A",
+        "borough" : {$ne : "Brooklyn"}
+    }
+).sort(
+    {
+        "cusine": -1
+    }
+)
 
 14
-db.restaurants.find({
-    name: /^Wil/},
+db.restaurants.find(
+    {
+        name: /^Wil/
+    },
     {
         "_id":false,
         "restuarant_id":true,
@@ -65,8 +130,10 @@ db.restaurants.find({
 )
 
 15
-db.restaurants.find({
-    name: /ces$/},
+db.restaurants.find(
+    {
+        name: /ces$/
+    },
     {
         "_id":false,
         "restuarant_id":true,
@@ -77,8 +144,10 @@ db.restaurants.find({
 )
 
 16
-db.restaurants.find({
-    name: /.*Reg.*/},
+db.restaurants.find(
+    {
+        name: /.*Reg.*/
+    },
     {
         "_id":false,
         "restuarant_id":true,
@@ -89,22 +158,26 @@ db.restaurants.find({
 )
 
 17
-db.restaurants.find({ 
-    "borough": "Bronx" , 
-    $or : [
-        { "cuisine" : "American"},
-        { "cuisine" : "Chinese"}
-    ]
-})
+db.restaurants.find(
+    { 
+        "borough": "Bronx" , 
+        $or : [
+            { "cuisine" : "American"},
+            { "cuisine" : "Chinese"}
+        ]
+    }
+)
 
 18
-db.restaurants.find({ 
-    $or : [
-        { "borough" : "Bronx"},
-        { "borough" : "Brooklyn"},
-        { "borough" : "Queens"},
-        { "borough" : "Staten Island"}
-    ]},
+db.restaurants.find(
+    { 
+        $or : [
+            { "borough" : "Bronx"},
+            { "borough" : "Brooklyn"},
+            { "borough" : "Queens"},
+            { "borough" : "Staten Island"}
+        ]
+    },
     {
         "_id":false,
         "restuarant_id":true,
@@ -115,13 +188,15 @@ db.restaurants.find({
 )
 
 19
-db.restaurants.find({ 
-    $or : [
-        { "borough" : {$ne : "Bronx"}},
-        { "borough" : {$ne : "Brooklyn"}},
-        { "borough" : {$ne : "Queens"}},
-        { "borough" : {$ne : "Staten Island"}}
-    ]},
+db.restaurants.find(
+    { 
+        $or : [
+            { "borough" : {$ne : "Bronx"}},
+            { "borough" : {$ne : "Brooklyn"}},
+            { "borough" : {$ne : "Queens"}},
+            { "borough" : {$ne : "Staten Island"}}
+        ]
+    },
     {
         "_id":false,
         "restuarant_id":true,
@@ -132,8 +207,10 @@ db.restaurants.find({
 )
 
 20
-db.restaurants.find({ 
-    "grades.score" : {$lte : 10}},
+db.restaurants.find(
+    { 
+        "grades.score" : {$lte : 10}
+    },
     {
         "_id":false,
         "restuarant_id":true,
@@ -144,14 +221,17 @@ db.restaurants.find({
 )
 
 21
-db.restaurants.find({ 
-    $or : [
-        {name: /^Wil/},
-        {"$and" : [
-            {"cusine" : {$ne : "American"}},
-            {"cusine" : {$ne : "Chinese"}}
-        ]}
-    ]},
+db.restaurants.find(
+    { 
+        $or : [
+            {name: /^Wil/},
+            {"$and" : [
+                {"cusine" : {$ne : "American"}},
+                {"cusine" : {$ne : "Chinese"}}
+                ]
+            }
+        ]
+    },
     {
         "_id":false,
         "restuarant_id":true,
@@ -162,10 +242,11 @@ db.restaurants.find({
 )
 
 22
-db.restaurants.find({
-    "grades.date": ISODate("2014-08-11T00:00:00Z"),
-    "grades.grade" : "A",
-    "grades.score": 11
+db.restaurants.find(
+    {
+        "grades.date": ISODate("2014-08-11T00:00:00Z"),
+        "grades.grade" : "A",
+        "grades.score": 11
     },
     {
         "_id":false,
@@ -176,10 +257,11 @@ db.restaurants.find({
 )
 
 23
-db.restaurants.find({
-    "grades.1.date": ISODate("2014-08-11T00:00:00Z"),
-    "grades.1.grade" : "A",
-    "grades.1.score": 9
+db.restaurants.find(
+    {
+        "grades.1.date": ISODate("2014-08-11T00:00:00Z"),
+        "grades.1.grade" : "A",
+        "grades.1.score": 9
     },
     {
         "_id":false,
@@ -190,11 +272,12 @@ db.restaurants.find({
 )
 
 24
-db.restaurants.find({
-    $and : [
-        {"address.coord.1" : {$gt : 42}},
-        {"address.coord.1" : {$lt : 52}}
-    ]
+db.restaurants.find(
+    {
+        $and : [
+            {"address.coord.1" : {$gt : 42}},
+            {"address.coord.1" : {$lt : 52}}
+        ]
     },
     {
         "_id":false,
@@ -206,25 +289,40 @@ db.restaurants.find({
 )
 
 25
-db.restaurants.find().sort("name")
+db.restaurants.find(
+
+).sort("name")
 
 26
-db.restaurants.find().sort({"name": -1})
+db.restaurants.find(
+
+).sort(
+    {
+        "name": -1
+    }
+)
 
 27
-db.restaurants.find().sort(
+db.restaurants.find(
+
+).sort(
     {"cuisine": 1},
-    {"borough": -1})
+    {"borough": -1}
+)
 
 28
 db.restaurants.find(
-    {"address.street" : {$exists : true}}
+    {
+        "address.street" : {$exists : true}
+    }
 )
 
 29
 db.restaurants.find(
-    {"address.coord" : {$type : 1}}
-    )
+    {
+        "address.coord" : {$type : 1}
+    }
+)
 
 30
 db.restaurants.find(
