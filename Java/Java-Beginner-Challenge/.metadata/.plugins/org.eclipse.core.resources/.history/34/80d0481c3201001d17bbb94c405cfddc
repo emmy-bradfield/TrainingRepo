@@ -1,0 +1,20 @@
+package garageChallenge;
+
+public class Motorbike extends Vehicle{
+	
+	Integer power;
+
+	public Motorbike(String make, String transmission, Integer power) {
+		super(make, transmission);
+		type = "Motorbike";
+		this.power = power;
+		
+	}
+
+	@Override
+	public Double costOfRepairs() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

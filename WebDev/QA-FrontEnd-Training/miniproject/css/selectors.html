@@ -1,0 +1,133 @@
+<!-- LIVE SERVER URL: http://127.0.0.1:5500/index.html -->
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="UFT-8" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/icon type" href="/assets/HTML5-logo.png" />
+    <link rel="stylesheet" type="text/CSS" href="/assets/stylesheet.css" />
+    <title> Learning HTML </title>
+</head>
+
+<body>
+    <header>
+        <h1> Learning HTML with QA </h1>
+        <br>
+        <p>Here I explore and practice learning and understanding HTML, CSS, and JS through my course with HTML. Whilst
+            specific documentation, work, and practice will be organised in their respective folders and not in the same
+            directory, this website exists for me to practice bringing the various elements together and building the
+            website up as I go <br> </p>
+    </header>
+    <nav>
+        <ul>
+            <li class="nav"> <a href="../index.html">HOME</a> </li>
+            <li class="nav"> <a href="./css.html">CSS</a> </li>
+            <li class="nav"> <a href="../js/js.html">JS</a> </li>
+        </ul>
+    </nav>
+    <br>
+    <h2>Style the following html document with CSS for each of the elements: </h2>
+    <div class="center">
+        <ol>
+            <li>Add a blue colour to the element</li>
+            <li>Identify a descendant and apply a descendant combinator to set the colour to red.</li>
+            <li>Identify a direct child relationship and apply a lime green colour.</li>
+            <li>Identify an adjacent-sibling relationship and apply a purple colour</li>
+            <li>BONUS: Research pseduo-class and apply a hover effect on p class="hover"</li>
+        </ol>
+    </div>
+    <br>
+    <div class="chunk">
+        <h3>1. Add a blue colour to the element</h3>
+        <hr>
+        <h4> BEFORE:</h4>
+        <h1 id="heading" class="font"> A <em>heading</em></h1>
+        <p class="font">A paragraph <em>with emphasis</em></p>
+        <header>
+            <h1>Header</h1>
+        </header>
+        <hr>
+        <h4> AFTER: </h4>
+        <h1 id="heading" class="font"> A <em class="new">heading</em></h1>
+        <p class="font">A paragraph <em class="new">with emphasis</em></p>
+        <header>
+            <h1>Header</h1>
+        </header>
+        <hr>
+    </div>
+    <div class="chunk">
+        <h3>2. Identify a descendant and apply a descendant combinator to set the colour to red</h3>
+        <hr>
+        <h4> BEFORE:</h4>
+        <h1 id="heading" class="font"> A <em class="new">heading</em></h1>
+        <p class="font">A paragraph <em class="new">with emphasis</em></p>
+        <header>
+            <h1>Header</h1>
+        </header>
+        <hr>
+        <h4> AFTER: </h4>
+        <h1 id="heading" class="font"> A <em class="new">heading</em></h1>
+        <p class="font">A paragraph <em class="new2">with emphasis</em></p>
+        <header>
+            <h1>Header</h1>
+        </header>
+        <hr>
+    </div>
+    <div class="chunk">
+        <h3> 3. Identify a direct child relationship and apply a lime green colour.</h3>
+        <hr>
+        <h4> BEFORE: </h4>
+        <footer>
+            Body footer
+        </footer>
+        <hr>
+        <h4> AFTER:</h4>
+        <footer class="new">
+            Body footer
+        </footer>
+        <hr>
+    </div>
+    <div class="chunk">
+        <h3> 4. Identify an adjacent-sibling relationship and apply a purple colour </h3>
+        <hr>
+        <h4> BEFORE: </h4>
+        <article>
+            <h1>Article</h1>
+            <p>paragraph 1</p>
+        </article>
+        <hr>
+        <h4> AFTER:</h4>
+        <article class="new">
+            <h1 clas="new">Article</h1>
+            <p class="new">paragraph 1</p>
+        </article>
+        <hr>
+    </div>
+    <div class="chunk">
+        <h3> 5. BONUS: Research pseduo-class and apply a hover effect on p class="hover" </h3>
+        <hr>
+        <h4> BEFORE:</h4>
+        <article>
+            <h1>Article</h1>
+            <p>Paragraph 1</p>
+            <p>Paragraph 2</p>
+            <blockquote>Quote</blockquote>
+            <p>Paragraph 3</p>
+            <footer>Article footer</footer>
+        </article>
+        <hr>
+        <h4> AFTER:</h4>
+        <article class="bonus">
+            <h1>Article</h1>
+            <p>Paragraph 1</p>
+            <p>Paragraph 2</p>
+            <blockquote>Quote</blockquote>
+            <p>Paragraph 3</p>
+            <footer>Article footer</footer>
+        </article>
+    </div>
+    <hr>
+</body>
+
+</html>

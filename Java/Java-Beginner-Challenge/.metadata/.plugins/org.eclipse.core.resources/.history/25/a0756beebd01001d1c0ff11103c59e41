@@ -1,0 +1,54 @@
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+
+import org.junit.Test;
+
+import garageChallenge.Car;
+import garageChallenge.Garage;
+import garageChallenge.Lorry;
+import garageChallenge.Motorbike;
+import garageChallenge.Runner;
+import garageChallenge.Vehicle;
+
+public class GarageTest {
+
+	@Test
+	public void objectsAdded() {
+		assertNotNull("No items have been added", Garage.garage);
+	}
+	
+	@Test
+	public void addVehciles() {
+		Vehicle passCar = new Car("make", "transmission", 1, 10);
+		Garage.addVehicle(passCar);
+		assertNotNull("pass Car has not been added", Garage.garage.contains(passCar));
+
+		Vehicle passBike = new Motorbike("make", "transmission", 125, 12);
+		Garage.addVehicle(passBike);
+		assertNotNull("pass Bike has not been added", Garage.garage.contains(passBike));
+
+		Vehicle passLorry = new Lorry("make", "transmission", 10000, 14);
+		Garage.addVehicle(passLorry);
+		assertNotNull("pass Lorry has not been added", Garage.garage.contains(passLorry));
+	}
+	
+	@Test
+	public void vehicleRemoved() {
+		Vehicle passLorry = new Lorry("make", "transmission", 10000, 14);
+		Garage.addVehicle(passLorry);
+		Vehicle passBike = new Motorbike("make", "transmission", 125, 12);
+		Garage.addVehicle(passBike);
+		Vehicle passCar = new Car("make", "transmission", 1, 10);
+		Garage.addVehicle(passCar);
+		
+		Garage.removeVehicleByID(10);
+		Garage.removeVehicleByID(12);
+		Garage.removeVehicleByID(14);
+		
+		@Test
+		assertNull("vehicle not removed", Garage.garage.contains(passCar));
+		assertNull("Vehicle not removed", Garage.garage.contains(passBike));
+		assertNull("Vehicle not removed", Garage.garage.contains(passLorry));
+	}
+	
+}

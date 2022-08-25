@@ -1,0 +1,24 @@
+import static org.junit.Assert.assertNotNull;
+
+import org.junit.Test;
+
+import garageChallenge.Car;
+import garageChallenge.Garage;
+import garageChallenge.Runner;
+import garageChallenge.Vehicle;
+
+public class GarageTest {
+
+	@Test
+	public void objectsAdded() {
+		assertNotNull("No items have been added", Garage.garage);
+	}
+	
+	@Test
+	public void acceptsCorrectParameters() {
+		Vehicle passCar = new Car("make", "model", 1, 10);
+		Garage.addVehicle(passCar);
+		assertNotNull("pass Car has not been added", Garage.garage.contains(passCar) );
+	}
+	
+}

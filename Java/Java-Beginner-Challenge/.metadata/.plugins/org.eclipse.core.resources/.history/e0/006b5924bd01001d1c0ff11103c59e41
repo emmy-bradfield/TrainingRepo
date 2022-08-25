@@ -1,0 +1,35 @@
+import static org.junit.Assert.assertNotNull;
+
+import org.junit.Test;
+
+import garageChallenge.Car;
+import garageChallenge.Garage;
+import garageChallenge.Motorbike;
+import garageChallenge.Runner;
+import garageChallenge.Vehicle;
+
+public class GarageTest {
+
+	@Test
+	public void objectsAdded() {
+		assertNotNull("No items have been added", Garage.garage);
+	}
+	
+	@Test
+	public void carAdded() {
+		Vehicle passCar = new Car("make", "transmission", 1, 10);
+		Garage.addVehicle(passCar);
+		assertNotNull("pass Car has not been added", Garage.garage.contains(passCar));
+	}
+	
+	public void motorbikeAdded() {
+		Vehicle passBike = new Motorbike("make", "transmission", 125, 12);
+		Garage.addVehicle(passBike);
+		assertNotNull("pass Bike has not been added", Garage.garage.contains(passBike));
+	}
+	
+	public void lorryAdded() {
+		Vehicle passLorry = new Lorry("make", "transmission", 10000, 14);
+	}
+	
+}

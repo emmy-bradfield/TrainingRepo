@@ -1,0 +1,18 @@
+package garageChallenge;
+
+public abstract class Vehicle {
+	
+	String type;
+	String make;
+	String transmission;
+	Integer vehicleID = 0;
+	
+	public Vehicle(String make, String transmission) {
+		this.make = make;
+		this.transmission = transmission;
+		vehicleID ++;
+	}
+	
+	public abstract Double costOfRepairs(); 
+	
+}

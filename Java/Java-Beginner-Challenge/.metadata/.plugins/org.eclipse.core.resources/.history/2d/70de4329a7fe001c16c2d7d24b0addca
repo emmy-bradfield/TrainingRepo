@@ -1,0 +1,68 @@
+package com.qa.personChallenge;
+
+import java.util.Scanner;
+
+public class Person extends People {
+
+	private String name;
+	private Integer age;
+	private String job;
+
+	public Person() {
+	}
+
+	public Person(String name, int age, String job) {
+		this.setName(name);
+		this.setAge(age);
+		this.setJob(job);
+	}
+
+	@Override
+	public String makeString() {
+		String details = (getName() + " is " + getAge() + " years old.\nThey Work as a " + getJob());
+		return details;
+	}
+
+	public void searchItems() {
+		Scanner scan = new Scanner(System.in);
+		String itemSearch;
+		System.out.println("\t\tSEARCH ITEMS");
+		System.out.println("Enter item name: ");
+		itemSearch = scan.nextLine();
+		for (int i = 0; i < people.size(); i++) {
+			if (people.get(i).name.equalsIgnoreCase(itemSearch)) {
+
+				System.out.println("\t\t[" + itemSearch + " FOUND]");
+				scan.close();
+			} else {
+				System.out.println("\t\t[" + itemSearch + " NOT FOUND]");
+			}
+
+		}
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Integer getAge() {
+		return age;
+	}
+
+	public void setAge(Integer age) {
+		this.age = age;
+	}
+
+	public String getJob() {
+		return job;
+	}
+
+	public void setJob(String job) {
+		this.job = job;
+	}
+
+}

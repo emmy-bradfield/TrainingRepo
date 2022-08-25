@@ -1,0 +1,10 @@
+package garageChallenge;
+
+public abstract class Motorbike extends Vehicle{
+
+	public Motorbike(String type, String make, String transmission) {
+		super(type, make, transmission);
+		
+	}
+
+}

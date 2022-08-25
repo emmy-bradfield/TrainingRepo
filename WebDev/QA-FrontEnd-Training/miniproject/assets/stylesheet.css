@@ -1,0 +1,231 @@
+*{
+    background-color:lavender;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin:0;
+    padding:0;
+    line-height: 1em;
+}
+
+hr{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top:1em;
+    margin-bottom: 1em;
+    padding:0;
+}
+
+ul{
+    background-color: black;
+    width: 100%;
+    list-style: none;
+    color: white;
+    display: table;
+    table-layout: fixed;
+    text-align: center;
+}
+
+li.nav{
+    background-color: inherit;
+    color: inherit;
+    display: table-cell;
+    text-align: center;
+    float: none;
+    height: 1.5em;
+    vertical-align: middle;
+}
+
+a{
+    background-color: inherit;
+    color: inherit;
+    text-decoration: inherit;
+    height:inherit;
+    display:block;
+    padding-top:0.5em;
+}
+
+li.nav:hover{
+    background-color: rgb(76, 72, 83);
+}
+
+li a.current{
+    background-color: rgb(76, 72, 83);
+}
+
+h1{
+    background-color: inherit;
+    margin-bottom: -10px;
+}
+
+h2{
+    line-height: 1.5em;
+    background-color: inherit;
+    text-indent: 0;
+    text-align: center;
+}
+
+h3{
+    line-height: 1.5em;
+    background-color: inherit;
+    text-indent: 0;
+}
+
+h4{
+    line-height: 1.5em;
+    background-color: inherit;
+    text-indent: 0;
+    margin-bottom: 1em;
+}
+
+p{
+    background-color: inherit;
+    line-height: inherit;
+    margin: 1em;
+    display: block;
+
+}
+
+p.left{
+    display:block;
+    max-width: 50%;
+    float:left;
+    line-height: 1em;
+    text-indent: 0;
+    margin-top: 0;
+    margin-left:0;
+    font-style: italic;
+}
+
+p.caption{
+    background-color: inherit;
+    line-height: inherit;
+    max-width: 50%;
+    margin-left:45%;
+    font-size: smaller;
+    display: block;
+    line-height: 1em;
+    text-indent: 0;
+}
+
+p.caption2{
+    background-color: inherit;
+    line-height: 0.75em;
+    display: block;
+    text-indent:0;
+    text-align: center;
+}
+
+header{
+    text-align: justify;
+    padding:0;
+    padding:1em;
+    line-height: 1em;
+    background-color: rgb(127, 114, 199);
+}
+
+div{
+    margin-left: 2em;
+    line-height: 1.5em;
+    background-color: inherit;
+    text-indent: 2em;
+}
+
+img.embed{
+    width:30%;
+    height:auto;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+img.left{
+    display: inline;
+    float:left;
+    max-width: 35%;
+    height: auto;
+    margin-top: 8%;
+    margin-left:2%;
+    transform:rotate(45deg);
+}
+
+img.right{
+    display: block;
+    max-width: 50%;
+    height: auto;
+    margin-top: 0%;
+    margin-left:45%;
+}
+
+li{
+    margin-left:1em;
+    line-height: 1em;
+    max-width: 100%;
+}
+
+img.sidebar{
+    display: inline;
+    float:right;
+    width:50%;
+    margin-right:3em;
+    margin-top:0;
+}
+
+.chunk{
+    display:block;
+    text-align: left;
+    text-indent: 0;
+    border: black;
+    background-color: aliceblue;
+    padding: 1em;
+    border-width: 2px;
+    border-style: solid;
+    width: 60%;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+em.new{
+    color:blue;
+}
+
+p em.new2{
+    color: red;
+}
+
+footer{
+    background-color: inherit;
+}
+
+footer.new{
+    color:limegreen;
+}
+
+h1 + p.new{
+    background-color: inherit;
+    color:purple;
+}
+
+article{
+    background-color: inherit;
+}
+
+h1 ~ p.two{
+    background-color: grey;
+}
+
+blockquote{
+    background-color: inherit;
+}
+
+article.bonus:hover{
+    background-color: lightcoral;
+}
+
+ol.home{
+    margin-left: 10%;
+}
+
+div.center{
+    display: flex;
+    justify-content: center;
+}

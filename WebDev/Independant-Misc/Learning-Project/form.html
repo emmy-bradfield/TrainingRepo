@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Complete Form Submission</title>
+    </head>
+    <body>
+        <script>
+            function validateForm() {
+                let x = document.forms["personalDetails"]["fname"].value;
+                if (x == "") {
+                    alert("Please enter a name");
+                    return false;
+                }
+            }
+            function numberValidate(){
+                let x = document.getElementbyID("num").value;
+                let text;
+                if (isNaN(x) || x < 1 || x > 10) {
+                    text = "I SAID A NUMBER BETWEEN ONE AND TEN YOU SLAG";
+                } else {
+                    text = "shit choice, mate"
+                }
+            document.getElementById("response").innerHTML = text;
+        }
+        </script>
+        <p> Gimme a number between one and ten</p>
+        <input id="num">
+        <button type="button" onclick="numberValidate()">Submit</button>
+        <p id="response"></p>
+    </body>
+</html>

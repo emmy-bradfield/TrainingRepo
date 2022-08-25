@@ -1,0 +1,7 @@
+package com.qa.personChallenge;
+
+public abstract class People{
+
+	public abstract String makeString();
+	
+}

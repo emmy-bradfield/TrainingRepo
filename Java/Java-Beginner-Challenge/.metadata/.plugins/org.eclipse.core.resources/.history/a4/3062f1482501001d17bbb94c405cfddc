@@ -1,0 +1,29 @@
+package garageChallenge;
+
+public class Main{
+	
+	public static void main(String[] args) {
+		System.out.println("= = = = = = = = = = = = TASK ONE = = = = = = = = = = =");
+		System.out.println("Task completed, see java file");
+		System.out.println("\n\n= = = = = = = = = = = = TASK TWO = = = = = = = = = = =");
+		Garage garage = new Garage();
+		garage.addCar(4, "Black", 2009, "Ford", false, 2, false, true);
+		garage.addCar(4, "Purple", 2021, "Volkswagen", true, 0, true, true);
+		garage.addMotobike(2, "Black", 2012, 250, "Yamaha", 1, true, false);
+		garage.addVan(4, "White", 2002, "Peugeot", 126873, 4, true, false);
+		garage.addVan(20, "Green", 1900, "Your Mum", 696969, 19, true, true);
+		System.out.println("= = = = = = = = = = = = TASK THREE = = = = = = = = = = =");
+		garage.currentJobs();
+		
+		System.out.println("= = = = = = = = = = = = TASK FOUR = = = = = = = = = = =");
+		garage.fixVehicle(2);
+		garage.removeVehicle(5);
+		//garage.emptyGarage();
+		
+		System.out.println("= = = = = = = = = = = = TASK ONE = = = = = = = = = = =");
+		garage.currentJobs();
+		garage.clearMotobikes();
+		garage.currentJobs();
+	}
+
+}

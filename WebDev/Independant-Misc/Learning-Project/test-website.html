@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link src="">
+        <meta>
+        <title> </title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <button type="button" onclick="alert('MORE TEXT! MORE TEXT!')">Click me</button>
+        <button onclick="window.print()">Print this page</button>
+        <button type="button" onclick="myButton()">What noise do I make?</button>
+        <p id="a"></p>
+        <p id="b"></p>
+        <button type="button" onclick="showDate()">Reveal the Date</button>
+        <p id="c"></p>
+        <a href="form.html"><button type="button">Fill out a form</button></a>
+        <style>
+        </style>
+        
+        <script>
+        document.getElementById("demo").innerHTML = "Text in the body of the file"
+        document.write("")
+        function showDate() {
+            document.getElementById("c").innerHTML = "Today is " + Date()
+        }
+        function myButton() {
+            document.getElementById("a").innerHTML = "click";
+            document.getElementById("b").innerHTML = "clack";
+        }
+
+        let test = "Welcome to Javascrip" 
+        console.log(test);
+        console.info(test);
+        console.warn(test);
+        console.error(test);
+
+        let car = "Ford Focus"
+        let myObj = {str: "Just keep logging you are nearly there", id:48576}
+        console.info("My first car was a: ", car, ". The object is: ", myObj);
+
+        let myTxt = "This could be useful";
+        console.log("this is a %c a message with some CSS,"+myTxt,"color:yellow; font-style:italic; background-color:blue; padding:2px");
+        </script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+package garageChallenge;
+
+public class Car extends Vehicle {
+
+	Integer age;
+	String type;
+	Double Cost;
+
+	public Car(String make, String transmission, Integer age) {
+		super(make, transmission);
+		type = "Car";
+		this.age = age;
+		costOfRepairs();
+
+	}
+	
+	public int getAge() {
+		return age;
+	}
+
+	@Override
+	public Double costOfRepairs() {
+		Cost;
+		Integer FlatRate = 50;
+		getAge();
+		if (age >= 10) {
+			Cost = FlatRate + 50;
+		}
+		if (make == "Ford") {
+			Cost = Cost/1.5;
+		} else if (make == "BMW") {
+			Cost = Cost/0.5;
+		}
+		return Cost;
+	}
+}

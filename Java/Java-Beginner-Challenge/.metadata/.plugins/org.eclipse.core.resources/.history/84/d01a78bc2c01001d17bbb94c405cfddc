@@ -1,0 +1,10 @@
+package garageChallenge;
+
+public abstract class Lorry extends Vehicle{
+
+	public Lorry(String type, String make, String transmission) {
+		super(type, make, transmission);
+		// TODO Auto-generated constructor stub
+	}
+
+}

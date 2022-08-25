@@ -1,0 +1,33 @@
+package garageChallenge;
+
+public class Lorry extends Vehicle{
+
+	Integer size;
+	static Double Cost = 100.00;
+	
+	public Lorry(String make, String transmission, Integer size) {
+		super(make, transmission);
+		type = "Lorry";
+		this.size = size;
+		costOfRepairs();
+	}
+	
+	public static Double getCost() {
+		return Cost;
+	}
+
+	@Override
+	public Double costOfRepairs() {
+		if (size >= 10) {
+			Cost = Cost*2;
+		}
+		if (make == "Mercedes") {
+			Cost = Cost*1.2;
+		}
+		if (transmission == "Manual") {
+			Cost = Cost - 100;
+		}
+		return Cost;
+	}
+
+}

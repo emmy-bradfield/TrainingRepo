@@ -1,0 +1,20 @@
+package garageChallenge;
+
+public class Lorry extends Vehicle{
+
+	Integer size;
+	static Double Cost = 100.00;
+	
+	public Lorry( String make, String transmission, Integer size) {
+		super(make, transmission);
+		type = "Lorry";
+		this.size = size;
+	}
+
+	@Override
+	public Double costOfRepairs() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

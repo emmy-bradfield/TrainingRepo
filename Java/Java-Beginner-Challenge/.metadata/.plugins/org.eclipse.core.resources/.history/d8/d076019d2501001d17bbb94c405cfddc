@@ -1,0 +1,117 @@
+package garageChallenge;
+
+public class Car extends Vehicle {
+
+	// Attributes
+	Boolean Automatic;
+	Integer Age;
+	Integer CostOfWork;
+	private Integer WheelsReplace;
+	private Boolean EngineFault;
+	private Boolean Repaint;
+
+
+	// Class Constructors
+	public Car() {
+	};
+
+	public Car(Integer VehicleID, Integer Wheels, String Colour, Integer ManufactureYear, String Make, Boolean Automatic) {
+		super(VehicleID, Wheels, Colour, ManufactureYear, Make);
+		this.Automatic = Automatic;
+	}
+
+	// Getters and Setters
+	public String getMake() {
+		return Make;
+	}
+
+	public Boolean getAutomatic() {
+		return Automatic;
+	}
+
+	public void setMake(String Make) {
+		this.Make = Make;
+	}
+
+	public void getAutomatic(Boolean Automatic) {
+		this.Automatic = Automatic;
+	}
+	
+	public Integer getCostOfWork() {
+		return CostOfWork;
+	}
+	
+	public void setCostOfWork(Integer WheelsReplace, Boolean EngineFault, Boolean Repaint) {
+		this.setWheelsReplace(WheelsReplace);
+		this.setEngineFault(EngineFault);
+		this.setRepaint(Repaint);;
+		
+	}
+
+	// Override Methods
+	
+	@Override
+	public Integer getAge() {
+		Age = (2022 - getManufactureYear());
+		return Age;
+	}
+
+	@Override
+	public Integer costOfWork(Integer WheelsReplace, Boolean EngineFault, Boolean Repaint) {
+		Integer perWheel = 100;
+		if (WheelsReplace > 0) {
+			getMake();
+			if (Make == "BMW" || Make == "Audi" || Make == "Ferrari" || Make == "Jaguar") {
+				perWheel = 200;
+			} else if (Make == "Ford" || Make == "Volkswagen") {
+				perWheel = 50;
+			}
+			CostOfWork =+ (WheelsReplace * perWheel);
+		}
+		if (EngineFault == true) {
+			getAutomatic();
+			if (Automatic == true) {
+				CostOfWork =+ 100;
+			} else {
+				CostOfWork =+ 300;
+			}
+		} if (EngineFault == true); {
+			getColour();
+			if (Colour == "Purple" || Colour == "Gold" || Colour == "Yellow") {
+				CostOfWork = +200;
+			} else {
+				CostOfWork = +100;
+			}
+		}
+		getAge();
+		if (Age > 10) {
+			CostOfWork = (CostOfWork*2);
+		}
+		return CostOfWork;
+
+	}
+
+	public Integer getWheelsReplace() {
+		return WheelsReplace;
+	}
+
+	public void setWheelsReplace(Integer wheelsReplace) {
+		WheelsReplace = wheelsReplace;
+	}
+
+	public Boolean getEngineFault() {
+		return EngineFault;
+	}
+
+	public void setEngineFault(Boolean engineFault) {
+		EngineFault = engineFault;
+	}
+
+	public Boolean getRepaint() {
+		return Repaint;
+	}
+
+	public void setRepaint(Boolean repaint) {
+		Repaint = repaint;
+	}
+}

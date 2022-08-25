@@ -1,0 +1,16 @@
+package garageChallenge;
+
+public class Main{
+	
+	public static void main(String[] args) {
+		Garage garage = new Garage();
+		garage.addCar(4, "Black", 2009, "Ford", false, 2, false, true);
+		garage.addCar(4, "Purple", 2021, "Volkwagen", true, 0, true, true);
+		garage.addMotobike(2, "Black", 2012, 250, "Yamaha", 1, true, false);
+		garage.addVan(4, "White", 2002, "Peugeot", 126873, 4, true, false);
+		garage.currentJobs();
+		
+		garage.fixVehicle(1);
+	}
+
+}

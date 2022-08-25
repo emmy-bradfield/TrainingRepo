@@ -1,0 +1,17 @@
+package garageChallenge;
+
+public abstract class Car extends Vehicle{
+	
+	Integer age;
+	String type;
+
+	public Car(String type, String make, String transmission, Integer age) {
+		super(make, transmission);
+		type = "Car";
+		this.age = age;
+		
+		
+	}
+	
+
+}

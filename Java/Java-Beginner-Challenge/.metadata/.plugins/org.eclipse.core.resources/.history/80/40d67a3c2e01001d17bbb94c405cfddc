@@ -1,0 +1,13 @@
+package garageChallenge;
+
+public abstract class Lorry extends Vehicle{
+
+	Integer size;
+	
+	public Lorry(String type, String make, String transmission, Integer size) {
+		super(make, transmission);
+		type = "Lorry";
+		this.size = size;
+	}
+
+}

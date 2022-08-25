@@ -1,0 +1,35 @@
+package garageChallenge;
+
+public class Motorbike extends Vehicle{
+	
+	Integer power;
+	static Double Cost;
+
+	public Motorbike(String make, String transmission, Integer power) {
+		super(make, transmission);
+		type = "Motorbike";
+		this.power = power;
+		costOfRepairs();
+		
+	}
+	
+	public static double getCost() {
+		return Cost;
+	}
+
+	@Override
+	public Double costOfRepairs() {
+		Cost = 20.00;
+		if (power >= 250) {
+			Cost = Cost + 50;
+		}
+		if (make == "Harley Davidson") {
+			Cost = Cost/1.5;
+		}
+		if (transmission == "Automatic") {
+			Cost = Cost/0.9;
+		}
+		return Cost;
+	}
+
+}

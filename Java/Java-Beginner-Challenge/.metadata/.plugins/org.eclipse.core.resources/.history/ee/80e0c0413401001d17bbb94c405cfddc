@@ -1,0 +1,21 @@
+package garageChallenge;
+
+public class Runner {
+	
+
+	public static void main(String[] args) {
+		System.out.println("1. Using Vehicle as a base class, create three derived classes (Car, Motorbike, etc.).\nEach derived class should have its own attributes in addition to the normal Vehicle attributes.");
+		System.out.println(">> Classes: Vehicle, Car, Motorbike, Lorry\n>> Vehicle attributes: Type, Make, Transmission, Vehicle ID\n>> Car Attributes: Type = Car, Age\n>> Motorbike Attributes: Type = Motorbike, Power\n>> Lorry Attributes: Type = Lorry, Size\n");
+		System.out.println("\n2. Using a List<> implementation, store all your Vehicles in a Garage class.");
+		Vehicle carOne = new Car("Ford", "Automatic", 9);
+		Vehicle bikeOne = new Motorbike("Yamaha", "Automatic", 125); 
+		Vehicle lorryOne = new Lorry("Dennison", "Manual", 9);
+		Garage.garage.add(carOne);
+		Garage.garage.add(bikeOne);
+		Garage.garage.add(lorryOne);
+		System.out.println(">> Class created: Garage\n>> List created: garage\n>> Vehicles created: carOne, bikeOne, lorryOne\n>> All vehicles added to ArraysList garage\n");
+		System.out.println("\n3. Create a method in Garage that iterates through each Vehicle, calculating a bill for each type of Vehicle in a different way,\ndepending on the type of Vehicle it is (this does not need to be complex).");
+		Garage.costOfRepairs();
+	}
+
+}
