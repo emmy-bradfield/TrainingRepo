@@ -6,11 +6,11 @@
 
 ✓ add these three elements to the dom.js file
 
-* in script.js add a function to read just one item from the database (you will need to pass in an ID)
+✓ in script.js add a function to read just one item from the database (you will need to pass in an ID)
 
-* remember that to start the app from the command line you can run 'npm start' and to stop it you can use the shortcut ctrl+c
+✓ remember that to start the app from the command line you can run 'npm start' and to stop it you can use the shortcut ctrl+c
 
-* test that the new functionality works on the front end by opening a browser and navigating to http://localhost:8080 while the app is running
+✓ test that the new functionality works on the front end by opening a browser and navigating to http://localhost:8080 while the app is running
 
 * in the app.js create a function to update an item (it will need to take in an ID)
 

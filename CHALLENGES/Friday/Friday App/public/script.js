@@ -29,11 +29,21 @@ const get = () => {
     });
 }
 
+// GET one function
+const getOne = () => {
+  axios.get(`/read/${DOM.getOneIn.value.toString()}`)
+    .then((response) => {
+      DOM.getOneOut.innerHTML = JSON.stringify(response.data);
+    }).catch((err) => {
+      console.log(err);
+    });
+}
+
+DOM.getOneBtn.onclick = () => getOne();
+
 // POST function
 const post = () => {
-  axios.post(`/create`, {   name : DOM.inputName.value,
-                            description : DOM.inputDescription.value, 
-                            price : DOM.inputPrice.value})
+  axios.post(`/create`, {name : DOM.inputName.value})
     .then((response) => {
       console.log(response);
       get();

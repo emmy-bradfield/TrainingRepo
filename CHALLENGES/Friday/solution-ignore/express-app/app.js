@@ -7,7 +7,6 @@ const Datastore = require('nedb');
 // import body-parser
 const bodyParser = require('body-parser');
 
-
 // setting up the app
 const app = express();
 
@@ -52,7 +51,7 @@ app.get('/', (req,res) => {
 */
 
 // read (get)
-app.get('/read', (req,res) => {
+app.get('/read', (req, res) => {
   console.log(`\nRead - GET`);
   // get all data from the database
   db.find({}, (err, items) => {
