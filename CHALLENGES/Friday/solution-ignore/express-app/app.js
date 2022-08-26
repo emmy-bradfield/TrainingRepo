@@ -29,7 +29,7 @@ app.use(express.static(__dirname + '/public'));
 app.post('/create', (req,res) => {
   console.log(`\nCreate - POST`);
   // create an item from the data in the request body
-  let item = { name : req.body.name, _id: id.toString()};
+  let item = { name : req.body.name, description: _id: id.toString()};
   // increment our id by 1
   id++;
   //insert it into our DB

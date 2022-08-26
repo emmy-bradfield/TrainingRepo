@@ -12,20 +12,20 @@
 
 ✓ test that the new functionality works on the front end by opening a browser and navigating to http://localhost:8080 while the app is running
 
-* in the app.js create a function to update an item (it will need to take in an ID)
+✓ in the app.js create a function to update an item (it will need to take in an ID)
 
-* use curl to update an item from the command line. You will need to restart the server to do this (and create an item to update)
+* N/A: use curl to update an item from the command line. You will need to restart the server to do this (and create an item to update)
 
-* in the app.js create a function to delete an item (it will need to take in an ID)
+✓ in the app.js create a function to delete an item (it will need to take in an ID)
 
-* use curl to delete an item from the command line. You will need to restart the server to do this (and create an item to update)
+* N/A: use curl to delete an item from the command line. You will need to restart the server to do this (and create an item to update)
 
-* You now have an application that can CRUD!
+✓ You now have an application that can CRUD!
 
-* add a .gitignore to ignore the node_modules folder
+✓ add a .gitignore to ignore the node_modules folder
 
-* upload your work to github
+✓ upload your work to github
 
 ## Bonus
 
-* finish building the front-end by including a way to update and delete items
+✓ finish building the front-end by including a way to update and delete items

@@ -34,7 +34,7 @@ app.post('/create', (req,res) => {
     // log that we are running the create operation
     console.log(`\nCreate - POST`);
     // create an item from the request body
-    let item = { name : req.body.name, _id: id.toString()};
+    let item = {_id:id.toString(),name:req.body.name,description:req.body.description,cost:req.body.cost,};
     // increment our id by one
     id++;
 
@@ -83,36 +83,34 @@ app.get('/read/:id', (req,res) => {
 
 // UPDATE (Put)
 app.put('/update/:id', (req,res) => {
-    // log that we are running the read operation
-    log(`\nUpdate - PUT`);
+    console.log(`\nUpdate - PUT`);
     // create a new item object
-    let updatedItem = itemBuilder(req.body.name, req.body.description, req.body.price, parseInt(req.params.id));
-
+    let updatedItem = {_id:req.params.id,name:req.body.name,description:req.body.description,cost:req.body.cost};
     // find data in database BY using the id
     // send the new item
-    db.update({_id : parseInt(req.params.id)}, updatedItem, (err, itemID) => {
-        //if there is an error, send back the error
-        if (err) res.send(err);
-        // otherwise 200 - OK
-        res.sendStatus(200);
-        // log the item ID being returned
-        log(`Updated item id: ${JSON.stringify(itemID)}`);
+    db.update({_id : req.params.id}, updatedItem, (err, itemID) => {
+      // if there is an error, send back the error
+      if (err) res.send(err);
+      // otherwise 200 - OK and send back the item ID
+      res.status(200).send(`Updated item: ${itemID}`);
+      // log the item ID being returned
+      console.log(`Updated item: ${itemID}`);
     });
-});
+  });
 
 // DELETE (Delete)
 app.delete('/delete/:id', (req,res) => {
     // log that we are running the delete operation
-    log(`\nDelete - DELETE`);
+    console.log(`\nDelete - DELETE`);
 
     // deleting item from database by id
-    db.remove({_id : parseInt(req.params.id)}, (err, itemID) => {
+    db.remove({_id : req.params.id}, (err, itemID) => {
         //if there is an error, send back the error
         if (err) res.send(err);
         // otherwise 200 - OK
         res.sendStatus(200);
         //log the item id to console
-        log(`Deleted item id: ${JSON.stringify(itemID)}`);
+        console.log(`Deleted item with id: ${itemID}`);
     });
 });
 

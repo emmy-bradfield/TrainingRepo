@@ -77,7 +77,7 @@ const put = () => {
     });
 }
 
-DOM.buttonUpdate.onclick = () => put();
+DOM.editBtn.onclick = () => put();
 
 const del = () => { 
   axios.delete(`/delete/${DOM.inputID.value.toString()}`)
