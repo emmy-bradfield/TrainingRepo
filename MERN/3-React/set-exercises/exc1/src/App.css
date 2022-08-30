@@ -1,3 +1,7 @@
+body{
+  background-color: #282c34;
+}
+
 .App {
   text-align: center;
 }
@@ -15,13 +19,29 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin: 1em;
+}
+
+.App-main {
+  padding: 2em;
+  text-align: left;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .App-link {
@@ -35,4 +55,37 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.output{
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 10px;
+  background-color: #a6aebe;
+  box-shadow: 2px 5px 10px 2px lightgrey inset;
+  padding: 1em;
+  height: fit-content;
+  display: inline-flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: fit-content;
+}
+
+img{
+  max-width: 20vw;
+  float:left;
+}
+
+.cat{
+  display: inline-flex;
+  flex-direction: column;
+  margin-left: 1em;
+}
+
+hr{
+  width: 100%;
+  border: 2px solid black;
+  background-color: black;
+  margin-top: 2em;
 }
