@@ -1,5 +1,6 @@
 {
     "python.analysis.extraPaths": [
-        "./scripts"
+        "./scripts",
+        "./1-Starter/scripts"
     ]
 }
