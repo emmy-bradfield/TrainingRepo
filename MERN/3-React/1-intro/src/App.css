@@ -8,7 +8,7 @@
 }
 
 .divider{
-  width:100%;
+  width:100vw;
   height: 1em;
   background-color: #282c34;
   margin-top: 1em;
@@ -61,8 +61,7 @@ li{
   margin-right: auto;
   background-color: white;
   border-radius: 10px;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding: 2em;
 }
 
 p{
@@ -143,4 +142,44 @@ h5{
   margin-top:0;
   font-size: medium;
   margin-bottom:0;
+}
+
+.output{
+  width:fit-content;
+  display: inline-flex;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: rgb(83, 83, 83);
+  color: white;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+h4{
+  margin-top: 0em;
+  margin-bottom: 0em;
+  margin-left: 2em;
+}
+
+h1{
+  width:100%;
+}
+
+.div2 {
+  display: inline-flex;
+  width: fit-content;
+  margin-bottom: 2em;
+  align-items: center;
+}
+
+h2{
+  margin-top:0;
+  flex-wrap: nowrap;
+  width: 100%
+}
+
+.div3{
+  width: 80%;
 }

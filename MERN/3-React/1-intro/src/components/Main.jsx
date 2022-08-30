@@ -1,4 +1,5 @@
 import Basics from './Basics.jsx';
+import Embed from './Embed.jsx';
 
 const Main = () => {
     return (
@@ -10,12 +11,12 @@ const Main = () => {
             <hr></hr>
             <Basics />
             <div className="divider"></div>
-            <h2> Section Two </h2>
+            <h2> Embedded Functions and Objects </h2>
             <p>
-                Body text.
+                Objects or functions can be embeded into JavaScript.
             </p>
             <hr></hr>
-            <h3>Exercises Placeholder</h3>
+            <Embed />
             <div className="divider"></div>
             <h2> Section Two </h2>
             <p>

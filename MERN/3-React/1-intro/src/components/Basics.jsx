@@ -52,6 +52,10 @@ const Basics = () => {
                     {"export default App;"}
                 </div>
             </p>
+            <h3> RESULT:</h3>
+            <div className="output">
+            <h1>This is a header</h1>
+            </div>
         </>
     );
 }
