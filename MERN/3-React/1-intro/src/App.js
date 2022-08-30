@@ -1,22 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header.jsx';
+import One from './components/One.jsx'
+import Footer from './components/Footer.jsx';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h2 className="title"> Introduction to React JS</h2>
-      </header>
-
-      <main className="App-main">
-        <h2> Lesson One: Intro </h2>
-
-      </main>
-
-      <footer className="App-footer">
-        <em> Created by Emily Bradfield as part of my training with QA - check out my <a href="https://www.github.com/emmy-bradfield" target="_blank">GitHub</a> for more</em>
-      </footer>
-
+      <Header />
+      <One />
+      <Footer />
     </div>
   );
 }

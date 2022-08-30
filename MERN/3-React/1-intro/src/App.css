@@ -25,25 +25,64 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  padding: 0;
+  padding: 0.2em;
 }
 
-.App-main{
+ul {
   display: inline-flex;
-  align-items:flex-start;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: left;
+  margin: 0;
+  width: 90vw;
+  font-size: large;
+  align-items: center;
+  padding-inline-start: 0.5em;
+}
+
+li{
+  margin-left: 2em;
+}
+
+.navbar{
+  width: 100vw;
+  margin-top:0;
+}
+
+.App-main {
+  display: inline-flex;
+  align-items: flex-start;
   justify-content: space-evenly;
   color: black;
-  min-height: 75vh;
+  flex-wrap: wrap;
+}
+
+p{
+  text-align: left;
+  width: 90%;
+  margin-top: 0.5em;
 }
 
 h2{
   text-align: left;
   width: 90%;
+  margin-bottom:0.2em;
+}
+
+h3{
+  text-align: left;
+  width: 90%;
+  margin-bottom:0.2em;
+}
+
+hr{
+  width:90%;
 }
 
 .title{
   text-align: center;
   width: fit-content;
+  margin: 0.2em;
 }
 
 .App-footer{
