@@ -1,14 +1,9 @@
 import './App.css';
-import Header from './components/header.jsx'
-import Main from './components/main.jsx'
+import Calendar from './components/calendar';
+import data from './data/events.json';
 
 function App() {
-  return (
-    <div className="App">
-      <Header />
-      <Main />
-    </div>
-  );
+    return (<Calendar shindigs={data}/>);
 }
 
 export default App;
