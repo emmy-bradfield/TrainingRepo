@@ -4,9 +4,9 @@ import Embed from './Embed.jsx';
 const Main = () => {
     return (
         <main className="App-main">
-            <h2> React Basics and Components </h2>
+            <h2> Props </h2>
             <p>
-                Setting up a simple React application and creating a component.
+                Using props with static, immutable properties
             </p>
             <hr></hr>
             <Basics />
