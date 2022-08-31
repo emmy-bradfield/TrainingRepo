@@ -17,13 +17,6 @@ const Main = () => {
             </p>
             <hr></hr>
             <Embed />
-            <div className="divider"></div>
-            <h2> Section Two </h2>
-            <p>
-                Body text.
-            </p>
-            <hr></hr>
-            <h3>Exercises Placeholder</h3>
         </main>
     );
 }
