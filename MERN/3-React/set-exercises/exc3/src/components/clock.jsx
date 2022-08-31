@@ -1,9 +1,9 @@
 import { Component } from 'react';
 
-export default class Clock extends Component{
-    constructor(props){
+export default class Clock extends Component {
+    constructor(props) {
         super(props);
-        this.state={
+        this.state = {
             date: new Date(),
             text: "",
             boolForShould: true
@@ -11,8 +11,8 @@ export default class Clock extends Component{
         console.log("Constructor set the time as : " + this.state.date);
     };
 
-    componentWillMount(){
-        console.log("ComponentWillMount set the time as : " +this.state.date);
+    componentWillMount() {
+        console.log("ComponentWillMount set the time as : " + this.state.date);
     };
 
     componentDidMount() {
@@ -38,8 +38,8 @@ export default class Clock extends Component{
         console.log("componentDidUpdate sets the time as :" + this.state.date);
     };
 
-    tick(){
-        this.setState({ date : new Date() });
+    tick() {
+        this.setState({ date: new Date() });
     };
 
     stateHandle = () => {
@@ -74,13 +74,18 @@ export default class Clock extends Component{
 
     render() {
         return (
-            <div>
+            <div className="output2">
                 <h1>{this.state.text}</h1>
-                <h2>It is {this.state.date.toLocaleTimeString()}</h2>
-                <button onClick={this.stateHandle}>Changes State</button>
-                <button onClick={this.stateHandle2}> Changes State and stops timer </button>
-                <button onClick={this.stateHandle3}> Changes State and restarts timer </button>
-                <button onClick={this.shouldHandle}> Changes shouldComponentUpdate </button>
+                <h2>It is </h2>
+                <div className="clock">
+                    <h2>{this.state.date.toLocaleTimeString()}</h2>
+                </div>
+                <div className="margintop">
+                    <button className="btn btn-light" onClick={this.stateHandle2}> STOP</button>
+                    <button className="btn btn-light" onClick={this.stateHandle3}> RESTART</button>
+                    <button className="btn btn-light" onClick={this.stateHandle}>CHANGE STATE</button>
+                    <button className="btn btn-light" onClick={this.shouldHandle}> CHANGE UPDATE </button>
+                </div>
             </div>
         );
     }

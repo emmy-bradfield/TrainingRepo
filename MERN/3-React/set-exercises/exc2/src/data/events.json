@@ -2,9 +2,9 @@
     {
         "eventtitle": "Pub Crawl",
         "information":[
-            "date: 3-Sep",
-            "time: 7pm",
-            "location: The Hobbit Pub, Southampton"
+            "3rd of September",
+            "7pm",
+            "The Hobbit Pub, Southampton"
         ],
         "people":[
             {"forename": "Bianca", "surname":"Botea"},
@@ -16,9 +16,9 @@
     {
         "eventtitle": "Shrek's Adventure",
         "information": [
-            "date: 3-Sep",
-            "time: 2pm",
-            "location: Waterloo, London"
+            "3rd of September",
+            "2pm",
+            "Waterloo, London"
         ],
         "people":[
             {"forename": "Emily", "surname": "Bradfield"},
@@ -30,9 +30,9 @@
     {
         "eventtitle": "Comedy Bunkbed",
         "information": [
-            "date: 2-Sep",
-            "time: 7pm",
-            "location: Enfield, London"
+            "2nd September",
+            "7pm",
+            "Enfield, London"
         ],
         "people":[
             {"forename": "Emily", "surname":"Bradfield"},
