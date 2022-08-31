@@ -105,3 +105,20 @@ hr{
   padding-top:0 !important;
   padding-bottom:0 !important;
 }
+
+.tasks{
+  text-align: left;
+  font-size: large;
+}
+
+p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.bees{
+  background-image: url("./assets/bees.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 13.5em;
+}
