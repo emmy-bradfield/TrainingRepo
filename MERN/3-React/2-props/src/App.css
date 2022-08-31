@@ -118,7 +118,7 @@ p{
 
 .bees{
   background-image: url("./assets/bees.png");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  padding: 11em;
+  padding: 16.5em;
 } 

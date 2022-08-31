@@ -11,16 +11,15 @@ const Prop = props => {
 
 const Bees = () => {
     return (
-        <div className="bees">
-            <div className="stack">
-                <Prop header="How Many Bees?!" />
-                <Prop content="It's important before entering into a new location to ensure the bee count is suitable. Let's
-        have a look around and see..." />
-                <Prop number="397" />
-                <Prop text="is too many bees!" />
-                <Prop nonexistant="🏃 💨💨" />
+        <>
+            <div className="bees">
+                <div className="stack">
+                    <Prop header="How Many Bees?!" content="It's important before entering into a new location to ensure 
+                    the bee count is suitable. Let's have a look around and see..." number="397" text="is too many bees!" 
+                    nonexistant="🏃 💨💨" />
+                </div>
             </div>
-        </div>
+        </>
     );
 }
 
