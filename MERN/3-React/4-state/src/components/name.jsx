@@ -5,6 +5,7 @@ const Name = ({name}) => {
         document.title = `${name}'s website!`
     }, [name]);
 
+
     return (
         <form>
             <h4> Welcome to {name}'s website!</h4>

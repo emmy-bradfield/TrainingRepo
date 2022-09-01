@@ -122,3 +122,22 @@ p{
   background-repeat: no-repeat;
   padding: 16.5em;
 } 
+
+li {
+  list-style: none;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+}
+
+ul{
+  padding-left:1em;
+  padding-right:1em;
+}
+
+.center{
+  display:inline-flex;
+  justify-content: center;
+  text-align: center;
+}
