@@ -1,5 +1,6 @@
 import Counter from './counter.jsx';
 import Game from './game.jsx';
+import Shopping from './shopping.jsx';
 
 const Main = () => {
     return (
@@ -21,6 +22,16 @@ const Main = () => {
                 <br></br>
             <div className="output" height="10vh;">
                 <Game />
+            </div>
+
+            <hr></hr>
+
+            <h2>Exercise Three</h2>
+            <h4>Create a simple shopping cart which items can be easily added to using hooks
+            </h4>
+                <br></br>
+            <div className="output" height="10vh;">
+                <Shopping />
             </div>
         </div>
     );

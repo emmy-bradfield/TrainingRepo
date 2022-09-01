@@ -96,10 +96,11 @@ hr{
   flex-direction: column;
 }
 
-.slide{
+.slide {
   display: inline-flex;
   flex-direction: row;
   width: fit-content;
+  align-items: center;
 }
 
 .navbar-expand {
@@ -140,4 +141,20 @@ p{
 .bigList{
   font-size: large;
   margin: 0.2em;
+}
+
+.form-control{
+  height:fit-content;
+  line-height: 1em;
+}
+
+.small{
+  max-width: fit-content;
+  width: 5em;
+}
+
+.prefix{
+  margin-right:0.2em;
+  margin-bottom: 0.1em;
+  margin-left: 0.5em;
 }

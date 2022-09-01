@@ -200,3 +200,10 @@ em {
   justify-content: space-between;
   width: 20vw;
 }
+
+.fakeClick{
+  color:var(--bs-link-color);
+  text-decoration: underline;
+  background-color: inherit;
+  border: 0;
+}
