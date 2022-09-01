@@ -126,3 +126,77 @@ h2{
 .margintop{
   margin-top: 1em;
 }
+
+li {
+  list-style: none;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+}
+
+ul{
+  padding-left:1em;
+  padding-right:1em;
+}
+
+.stack{
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.slide{
+  display: inline-flex;
+  flex-direction: row;
+  width: fit-content;
+}
+
+.btn{
+  padding:0;
+  line-height: 1em;
+  padding: 0.2em;
+  width: fit-content;
+  height: fit-content;
+  margin-left:0.3em;
+  margin-right:0.3em;
+}
+
+em {
+  display: inline-flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding:0.3em;
+  border: 1px solid black;
+  background: white;
+  line-height: 1em;
+}
+
+.small{
+  width: 2em;
+  padding:0;
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.center{
+  display:inline-flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.top{
+  display:inline-flex;
+  text-align: center;
+  align-items: flex-start;
+}
+
+.spread{
+  display: inline-flex;
+  justify-content: space-between;
+  width: 20vw;
+}
