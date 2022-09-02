@@ -1,3 +1,12 @@
+import Nav from './nav.jsx';
+import Home from './home.jsx';
+import Users from './users.jsx';
+import UserParam from './userParam.jsx';
+import UsersRoute from './usersRoute.jsx';
+import Contact from './contact.jsx';
+import NotFound from './404.jsx';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const Main = () => {
 
@@ -15,7 +24,15 @@ const Main = () => {
             </ul>
             <br></br>
             <div className="output" height="10vh;">
-
+                <div className="stack center">
+                    <Home />
+                    <hr/>
+                    <Users />
+                    <hr/>
+                    <Contact />
+                    <hr/>
+                    <NotFound />
+                </div>
             </div>
 
             <hr></hr>
@@ -25,7 +42,16 @@ const Main = () => {
             </h4>
             <br></br>
             <div className="output" height="10vh;">
-
+                <BrowserRouter>
+                    <Routes>
+                        <Route path='/' element={<Nav />}>
+                            <Route index element={<Home />} />
+                            <Route path='/users' element={<Users />} />
+                            <Route path='/contact' element={<Contact />} />
+                            <Route path="*" element={<NotFound />} />
+                        </Route>
+                    </Routes>
+                </BrowserRouter>
             </div>
 
             <hr></hr>
@@ -35,7 +61,16 @@ const Main = () => {
             </h4>
             <br></br>
             <div className="output" height="10vh;">
-
+            <BrowserRouter>
+                    <Routes>
+                        <Route path='/' element={<Nav />}>
+                            <Route index element={<Home />} />
+                            <Route exact path='/users' element={<UserParam />} />
+                            <Route exact path='/contact' element={<Contact />} />
+                            <Route path="*" element={<NotFound />} />
+                        </Route>
+                    </Routes>
+                </BrowserRouter>
             </div>
 
             <hr></hr>
@@ -45,7 +80,17 @@ const Main = () => {
             </h4>
             <br></br>
             <div className="output" height="10vh;">
-
+            <BrowserRouter>
+                    <Routes>
+                        <Route path='/' element={<Nav />}>
+                            <Route index element={<Home />} />
+                            <Route exact path='/users' element={<UsersRoute />} />
+                            <Route exact path='/users/:cowID' element={<UsersRoute />} />
+                            <Route exact path='/contact' element={<Contact />} />
+                            <Route path="*" element={<NotFound />} />
+                        </Route>
+                    </Routes>
+                </BrowserRouter>
             </div>
             <hr></hr>
 
@@ -60,7 +105,7 @@ const Main = () => {
                     2. Get a free API key from the API Key tab
                 </li>
                 <li>
-                    3. Create a FilmRequest Component that lets <br />the user enter a Movie title and axios 
+                    3. Create a FilmRequest Component that lets <br />the user enter a Movie title and axios
                     fetches the <br /> correct movie from OMDBAPI.
                 </li>
                 <em> Try and use Parent/Child Components to present your data </em>
