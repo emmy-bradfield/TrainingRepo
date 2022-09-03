@@ -24,12 +24,12 @@ const EmployeeInfo = () =>{
         return <div>Loading...</div>
     } else {
         return (
-            <ul>
-                {items.map((item) => {
+            <ul className="stack center">
+                {items.map((item) => (
                     <li key={item.id}>
                         {item.employee_name}
                     </li>
-                })}
+                ))}
             </ul>
         )
     }
