@@ -5,6 +5,8 @@ import UserParam from './userParam.jsx';
 import UsersRoute from './usersRoute.jsx';
 import Contact from './contact.jsx';
 import NotFound from './404.jsx';
+import EmployeeInfo from './employeeinfo.jsx';
+import LoginControl from './logincontrol.jsx';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -95,25 +97,17 @@ const Main = () => {
             <hr></hr>
 
             <h2>5.2 Data Requests </h2>
-            <h4> In this exercise, you are tasked with creating a movie search application.
+            <p>Due to an inability to aquire the API key needed for the exercise set on community, instead 
+                I will be completing the exercise in the tutorial:
+            </p>
+            <h4> Create a simple data request handler to import Employee Information from an external source
             </h4>
-            <ul className="stack">
-                <li>
-                    1. Navigate to OMDBAPI
-                </li>
-                <li>
-                    2. Get a free API key from the API Key tab
-                </li>
-                <li>
-                    3. Create a FilmRequest Component that lets <br />the user enter a Movie title and axios
-                    fetches the <br /> correct movie from OMDBAPI.
-                </li>
-                <em> Try and use Parent/Child Components to present your data </em>
-            </ul>
             <br></br>
             <div className="output" height="10vh;">
-
+                <EmployeeInfo />
             </div>
+
+            <hr/>
 
             <h2>5.3 Static Data </h2>
             <h4> Create a component LoginControl which displays:
@@ -131,7 +125,7 @@ const Main = () => {
             </ul>
             <br></br>
             <div className="output" height="10vh;">
-
+                <LoginControl />
             </div>
         </div>
     );
