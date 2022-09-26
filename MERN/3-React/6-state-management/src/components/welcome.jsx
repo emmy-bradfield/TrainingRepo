@@ -4,40 +4,16 @@ import FAQ from './faq.jsx';
 import LoginBtn from './loginbtn';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Nav from './nav.jsx';
-import { useState } from 'react';
+import { useState, Component } from 'react';
 import api from '../api';
 
-let count = 2;
-
 const Welcome = props => {
-    const [_id, setID] = useState("");
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-
     const isLoggedIn = props.isLoggedIn;
     const setLoggedIn = props.setLoggedIn;
 
-    const handleEmail = async event => {
-        const newEmail = event.target.value;
-        setEmail(newEmail)
-    }
-
-    const handlePassword = async event => {
-        const newPassword = event.target.value;
-        setPassword(newPassword)
-    }
-
-    const handleUser = async () => {
-        setID(count);
-        const payload = { _id, email, password }
-
-        await api.insertUser(payload).then(res => {
-            setEmail("");
-            setPassword("");
-        });
-        count++;
-        setLoggedIn(true);
-    }
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+    const [_id, setID] = useState("")
 
     if (isLoggedIn) {
         return (
@@ -72,24 +48,22 @@ const Welcome = props => {
                             </form>
                         </div>
                     </div>
-
                     <div className="card text-bg-secondary mb-3">
                         <div className="card-body">
                             <form className="stack form-control center">
                                 <h5>Sign up</h5>
-                                <input className="form-control fit" type="text" placeholder="email" onChange={handleEmail} />
+                                <input className="form-control fit" type="text" placeholder="email" onChange={setEmail} />
                                 <br />
-                                <input className="form-control fit" type="password" placeholder="choose password" onChange={handlePassword} />
+                                <input className="form-control fit" type="password" placeholder="choose password" onChange={setPassword} />
                                 <br />
-                                <button className="btn btn-dark btn-xs" onClick={handleUser}>Sign Up</button>
+                                <button className="btn btn-dark btn-xs" onClick={() => setLoggedIn(true)}>Sign Up</button>
                             </form>
                         </div>
                     </div>
-
                 </div>
             </div>
         );
     }
-};
+}
 
 export default Welcome;

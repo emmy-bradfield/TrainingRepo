@@ -21,7 +21,7 @@ if __name__ == '__main__':
 
 
 ######################### CHALLENGE TWO #########################
- ######################### IN PROGRESS #########################
+ ######################### COMPLETE #########################
 #Return the number of files traversed when walking the directory tree 
 # starting at the given path, and only returning files walked and not 
 # directories

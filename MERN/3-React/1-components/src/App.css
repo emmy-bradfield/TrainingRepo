@@ -1,6 +1,4 @@
-body{
-  background-color: #282c34;
-}
+/* React Defaults */
 
 .App {
   text-align: center;
@@ -58,6 +56,52 @@ body{
   }
 }
 
+
+/* Crude Layout (element) */
+
+body{
+  background-color: #282c34;
+}
+
+p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img{
+  max-width: 20vw;
+  float:left;
+}
+
+hr{
+  width: 100%;
+  border: 2px solid black;
+  background-color: black;
+  margin-top: 2em;
+}
+
+ul{
+  padding-left:1em;
+  padding-right:1em;
+}
+
+li {
+  list-style: none;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+}
+
+h2{
+  width:fit-content;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+
+/* Crude Layout (className) */
+
 .output{
   text-align: center;
   border: 1px solid grey;
@@ -73,54 +117,24 @@ body{
   width: fit-content;
 }
 
-img{
-  max-width: 20vw;
-  float:left;
-}
-
-.cat{
+.output2{
+  text-align: center;
+  border-radius: 10px;
+  height: fit-content;
   display: inline-flex;
+  align-items: center;
   flex-direction: column;
-  margin-left: 1em;
+  justify-content: space-evenly;
+  width: fit-content;
+  justify-content: center;
 }
 
-hr{
-  width: 100%;
-  border: 2px solid black;
-  background-color: black;
-  margin-top: 2em;
-}
+
+/* Small Object and Display Ammendments */
 
 .stack{
   display: inline-flex;
   flex-direction: column;
-}
-
-.navbar-expand {
-  flex-wrap: nowrap;
-  justify-content:space-evenly;
-}
-
-.nav-link{
-  padding-top:0 !important;
-  padding-bottom:0 !important;
-}
-
-.tasks{
-  text-align: left;
-  font-size: large;
-}
-
-p{
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.bees{
-  background-image: url("./assets/bees.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding: 16.5em;
 }
 
 .slide{
@@ -129,28 +143,37 @@ p{
   width: fit-content;
 }
 
-.btn{
-  padding:0;
-  line-height: 1em;
-  padding: 0.2em;
-  width: fit-content;
-  height: fit-content;
-  margin-left:0.3em;
-  margin-right:0.3em;
+.spread{
+  display: inline-flex;
+  justify-content: space-between;
+  width: 20vw !important;
 }
 
-em {
+.lil-spread{
   display: inline-flex;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 0;
-  align-items: center;
+  justify-content: space-between;
+  width: 10vw !important;
+}
+
+.top{
+  display:inline-flex;
   text-align: center;
+  align-items: flex-start;
+}
+
+.center{
+  display:inline-flex;
   justify-content: center;
-  padding:0.3em;
-  border: 1px solid black;
-  background: white;
-  line-height: 1em;
+  text-align: center;
+}
+
+.margin-top{
+  margin-top: 1em;
+}
+
+.margin-center{
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .small{
@@ -161,27 +184,56 @@ em {
   text-align: center;
 }
 
-.center{
-  display:inline-flex;
-  justify-content: center;
-  text-align: center;
+.fit{
+  width:fit-content;
 }
 
-.top{
-  display:inline-flex;
-  text-align: center;
-  align-items: flex-start;
+.shrink{
+  width:2em;
 }
 
-.spread{
-  display: inline-flex;
-  justify-content: space-between;
-  width: 20vw;
+.skinny-hr{
+  border: 1px solid black !important;
+  margin-top: 2em;
+  margin-left:1em;
+  margin-right:1em;
+  width: 0.1em !important;
 }
 
-.fakeClick{
-  color:var(--bs-link-color);
-  text-decoration: underline;
+
+/* Bootstrap Ammendments */
+
+.btn{
+  margin-left: 1em;
+}
+
+.btn-small{
+  width:fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subtle{
   background-color: inherit;
   border: 0;
+  text-align:center;
+  padding:0;
+  margin:0;
+}
+
+
+/* Element-Specific */
+
+.btn-xs{
+  width:fit-content;
+  margin:0;
+}
+
+
+/* App-specific */
+
+.cat{
+  display: inline-flex;
+  flex-direction: column;
+  margin-left: 1em;
 }
