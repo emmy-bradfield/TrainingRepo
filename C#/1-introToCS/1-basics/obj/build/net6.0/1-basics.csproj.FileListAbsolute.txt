@@ -1,0 +1,15 @@
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\1-basics\bin\build\net6.0\1-basics.exe
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\1-basics\bin\build\net6.0\1-basics.deps.json
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\1-basics\bin\build\net6.0\1-basics.runtimeconfig.json
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\1-basics\bin\build\net6.0\1-basics.dll
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\1-basics\bin\build\net6.0\1-basics.pdb
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\1-basics\obj\build\net6.0\1-basics.csproj.AssemblyReference.cache
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\1-basics\obj\build\net6.0\1-basics.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\1-basics\obj\build\net6.0\1-basics.AssemblyInfoInputs.cache
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\1-basics\obj\build\net6.0\1-basics.AssemblyInfo.cs
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\1-basics\obj\build\net6.0\1-basics.csproj.CoreCompileInputs.cache
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\1-basics\obj\build\net6.0\1-basics.dll
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\1-basics\obj\build\net6.0\refint\1-basics.dll
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\1-basics\obj\build\net6.0\1-basics.pdb
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\1-basics\obj\build\net6.0\1-basics.genruntimeconfig.cache
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\1-basics\obj\build\net6.0\ref\1-basics.dll
