@@ -1,0 +1,15 @@
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\7-files\obj\Debug\net6.0\7-files.csproj.AssemblyReference.cache
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\7-files\obj\Debug\net6.0\7-files.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\7-files\obj\Debug\net6.0\7-files.AssemblyInfoInputs.cache
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\7-files\obj\Debug\net6.0\7-files.AssemblyInfo.cs
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\7-files\obj\Debug\net6.0\7-files.csproj.CoreCompileInputs.cache
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\7-files\bin\Debug\net6.0\7-files.exe
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\7-files\bin\Debug\net6.0\7-files.deps.json
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\7-files\bin\Debug\net6.0\7-files.runtimeconfig.json
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\7-files\bin\Debug\net6.0\7-files.dll
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\7-files\bin\Debug\net6.0\7-files.pdb
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\7-files\obj\Debug\net6.0\7-files.dll
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\7-files\obj\Debug\net6.0\refint\7-files.dll
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\7-files\obj\Debug\net6.0\7-files.pdb
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\7-files\obj\Debug\net6.0\7-files.genruntimeconfig.cache
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\7-files\obj\Debug\net6.0\ref\7-files.dll

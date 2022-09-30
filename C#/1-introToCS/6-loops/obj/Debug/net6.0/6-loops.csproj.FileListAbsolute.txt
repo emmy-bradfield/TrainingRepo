@@ -1,0 +1,15 @@
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\6-loops\bin\Debug\net6.0\6-loops.exe
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\6-loops\bin\Debug\net6.0\6-loops.deps.json
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\6-loops\bin\Debug\net6.0\6-loops.runtimeconfig.json
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\6-loops\bin\Debug\net6.0\6-loops.dll
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\6-loops\bin\Debug\net6.0\6-loops.pdb
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\6-loops\obj\Debug\net6.0\6-loops.csproj.AssemblyReference.cache
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\6-loops\obj\Debug\net6.0\6-loops.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\6-loops\obj\Debug\net6.0\6-loops.AssemblyInfoInputs.cache
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\6-loops\obj\Debug\net6.0\6-loops.AssemblyInfo.cs
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\6-loops\obj\Debug\net6.0\6-loops.csproj.CoreCompileInputs.cache
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\6-loops\obj\Debug\net6.0\6-loops.dll
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\6-loops\obj\Debug\net6.0\refint\6-loops.dll
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\6-loops\obj\Debug\net6.0\6-loops.pdb
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\6-loops\obj\Debug\net6.0\6-loops.genruntimeconfig.cache
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\6-loops\obj\Debug\net6.0\ref\6-loops.dll
