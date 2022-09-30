@@ -1,4 +1,5 @@
 ﻿using System;
+using Checkers;
 
 namespace classes
 {
@@ -20,6 +21,11 @@ namespace classes
             Console.WriteLine("Iterating through an array, checkers, using OOP and classes");
             Checkers game = new Checkers(8, 8);
             game.CreateCheckerboard();
+            Console.WriteLine("");
+
+            Console.WriteLine("Iteraring through an array, checkers, using OOP with refined classes");
+            Checkerboard board = new Checkerboard(8, 8);
+            board.CreateCheckerboard();
             Console.WriteLine("");
 
         }

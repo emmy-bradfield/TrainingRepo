@@ -1,0 +1,15 @@
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\4-inheritance\obj\Debug\net6.0\4-inheritance.csproj.AssemblyReference.cache
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\4-inheritance\obj\Debug\net6.0\4-inheritance.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\4-inheritance\obj\Debug\net6.0\4-inheritance.AssemblyInfoInputs.cache
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\4-inheritance\obj\Debug\net6.0\4-inheritance.AssemblyInfo.cs
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\4-inheritance\obj\Debug\net6.0\4-inheritance.csproj.CoreCompileInputs.cache
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\4-inheritance\bin\Debug\net6.0\4-inheritance.exe
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\4-inheritance\bin\Debug\net6.0\4-inheritance.deps.json
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\4-inheritance\bin\Debug\net6.0\4-inheritance.runtimeconfig.json
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\4-inheritance\bin\Debug\net6.0\4-inheritance.dll
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\4-inheritance\bin\Debug\net6.0\4-inheritance.pdb
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\4-inheritance\obj\Debug\net6.0\4-inheritance.dll
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\4-inheritance\obj\Debug\net6.0\refint\4-inheritance.dll
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\4-inheritance\obj\Debug\net6.0\4-inheritance.pdb
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\4-inheritance\obj\Debug\net6.0\4-inheritance.genruntimeconfig.cache
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\4-inheritance\obj\Debug\net6.0\ref\4-inheritance.dll
