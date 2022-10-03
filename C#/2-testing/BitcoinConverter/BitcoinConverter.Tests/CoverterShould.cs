@@ -107,7 +107,7 @@ namespace Bitcoin.Tests
         }
 
         [Fact]
-        public async void ConvertBitcoins_BitcoinsLessThanZero_ThrowsArgumentException()
+        public async void ConvertBitcoins_NegativeBitcoins_ThrowsArgumentException()
         {
             //act
             Task result() => mock.ConvertBitcoins(ConvertSvc.Currency.USD, -1);
