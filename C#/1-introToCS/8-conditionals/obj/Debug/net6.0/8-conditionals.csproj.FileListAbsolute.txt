@@ -1,0 +1,15 @@
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\8-conditionals\bin\Debug\net6.0\8-conditionals.exe
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\8-conditionals\bin\Debug\net6.0\8-conditionals.deps.json
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\8-conditionals\bin\Debug\net6.0\8-conditionals.runtimeconfig.json
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\8-conditionals\bin\Debug\net6.0\8-conditionals.dll
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\8-conditionals\bin\Debug\net6.0\8-conditionals.pdb
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\8-conditionals\obj\Debug\net6.0\8-conditionals.csproj.AssemblyReference.cache
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\8-conditionals\obj\Debug\net6.0\8-conditionals.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\8-conditionals\obj\Debug\net6.0\8-conditionals.AssemblyInfoInputs.cache
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\8-conditionals\obj\Debug\net6.0\8-conditionals.AssemblyInfo.cs
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\8-conditionals\obj\Debug\net6.0\8-conditionals.csproj.CoreCompileInputs.cache
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\8-conditionals\obj\Debug\net6.0\8-conditionals.dll
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\8-conditionals\obj\Debug\net6.0\refint\8-conditionals.dll
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\8-conditionals\obj\Debug\net6.0\8-conditionals.pdb
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\8-conditionals\obj\Debug\net6.0\8-conditionals.genruntimeconfig.cache
+C:\Users\EmmyB.000\Desktop\OneDrive\Software\Training\C#\1-introToCS\8-conditionals\obj\Debug\net6.0\ref\8-conditionals.dll
