@@ -76,6 +76,7 @@ namespace Bitcoin.Tests
             Assert.Equal(expected, converted);
         }
 
+        [Fact]
         public async void ConvertBitcoins_BitcoinAPIServiceUnavailable_ReturnsNegativeOne()
         {
             var handlerMock = new Mock<HttpMessageHandler>();
