@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/BitcoinConverter/BitcoinConverter.Tests/BitcoinConverter.Tests.csproj",
+                "${workspaceFolder}/BitcoinConverter/BitcoinConverter.Code/BitcoinConverter.Code.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/BitcoinConverter/BitcoinConverter.Tests/BitcoinConverter.Tests.csproj",
+                "${workspaceFolder}/BitcoinConverter/BitcoinConverter.Client/BitcoinConverter.Client.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
