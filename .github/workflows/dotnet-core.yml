@@ -1,0 +1,31 @@
+name: bitcoinconverter.build
+
+on: push
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.402
+
+    - name: Install Dependencies
+      run: cd C#/2-testing/BitcoinConverter && dotnet restore
+
+    - name: Build
+      run: cd C#/2-testing/BitcoinConverter && dotnet build --configuration Release --no-restore
+
+    - name: Test
+      run: cd C#/2-testing/BitcoinConverter && dotnet test --no-restore --verbosity normal
+
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v1.0.0
+      with:
+        name: BitcoinConverter.Code.dll
+        path: /C#/2-testing/BitcoinConverter/BitcoinConverter.Code/bin/Release/netcoreapp3.1/BitcoinConverter.Code.dll
