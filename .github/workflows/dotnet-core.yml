@@ -28,4 +28,4 @@ jobs:
       uses: actions/upload-artifact@v1.0.0
       with:
         name: BitcoinConverter.Code.dll
-        path: /C#/2-testing/BitcoinConverter/BitcoinConverter.Code/bin/Debug/netcoreapp3.1/BitcoinConverter.Code.dll
+        path: C#/2-testing/BitcoinConverter/BitcoinConverter.Code/bin/Debug/netcoreapp3.1/BitcoinConverter.Code.dll
