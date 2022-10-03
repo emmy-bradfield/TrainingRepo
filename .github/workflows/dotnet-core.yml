@@ -35,6 +35,6 @@ jobs:
       if: startsWith(github.ref, 'refs/tags/')
       with:
         files:
-          C#/2-testing/BitcoinConverter/BitcoinConverter.Code/bin/Release/netcoreapp3.1/BitcoinConverter.Code.dll
+          C#/2-testing/BitcoinConverter/BitcoinConverter.Code/bin/Debug/netcoreapp3.1/BitcoinConverter.Code.dll
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
