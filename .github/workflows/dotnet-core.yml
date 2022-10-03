@@ -24,6 +24,18 @@ jobs:
     - name: Test
       run: cd C#/2-testing/BitcoinConverter && dotnet test --no-restore --verbosity normal
 
+    - name: Generate Test Coverage Report
+      run: | 
+        cd C#/2-testing/BitcoinConverter/BitcoinConverter.Tests
+        mkdir -p TestResults 
+        dotnet test /p:CollectCoverage=true /p:CoverletOutput=TestResults/ /p:CoverletOutletFormat=lcov
+
+    - name: Publish Test Coverage Report
+      uses: coverallsapp/github-action@v1.1.2
+      with: 
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        path-to-lcov: C#/2-testing/BitcoinConverter/BitcoinConverter.Tests/TestResults/coverage.info
+
     - name: Upload Artifact
       uses: actions/upload-artifact@v1.0.0
       with:
