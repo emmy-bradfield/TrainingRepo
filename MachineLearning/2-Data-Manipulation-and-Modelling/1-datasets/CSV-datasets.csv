@@ -1,0 +1,4 @@
+type, method, use cases, pros, cons
+comma-seperated variables (CSV), seperating data by a delimiter, flat structured and less-complex data, simple and easy to use, struggles with duplication of data and delimiters can become messed up - types are also not strongly enforced
+extensible markup language (XML), hierarchical tree-structure similar to html, electronic data exchange and web services, self-describing and easily read, redundant syntax leading to large files and slower parsing
+javascript object notation (JSON), self-describing with key-value pairs, complex data and web applications, lightweight and widely supported, no standardized schemas or support for namespaces and metadata
