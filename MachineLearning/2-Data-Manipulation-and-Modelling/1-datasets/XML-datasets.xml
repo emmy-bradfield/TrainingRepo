@@ -1,0 +1,23 @@
+<DataTypes>
+    <Type id="CSV">
+        <name>comma-seperated variables (CSV)</name>
+        <Method>seperating data by a delimiter</Method>
+        <UseCases>flat structured and less-complex data</UseCases>
+        <Pros>simple and easy to use</Pros>
+        <Cons>struggles with duplication of data and delimiters can become messed up - types are also not strongly enforced</Cons>
+    </Type>
+    <Type id="XML">
+        <name>extensible markup language (XML)</name>
+        <Method>hierarchical tree-structure similar to html</Method>
+        <UseCases>electronic data exchange and web services</UseCases>
+        <Pros>self-describing and easily read</Pros>
+        <Cons>redundant syntax leading to large files and slower parsing</Cons>
+    </Type>
+    <Type id="JSON">
+        <name>javascript object notation (JSON)</name>
+        <Method>self-describing with key-value pairs</Method>
+        <UseCases>complex data and web applications</UseCases>
+        <Pros>lightweight and widely supported</Pros>
+        <Cons>no standardized schemas or support for namespaces and metadata</Cons>
+    </Type>
+</DataTypes>
