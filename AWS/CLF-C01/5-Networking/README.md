@@ -2,6 +2,7 @@
 
 ### Contents
 1. [Virtual Private Cloud: Intro & Subnets](#one)
+2. [Security and Network Access Control Lists](#two)
 
 ## $Virtual$ $Private$ $Cloud$ $(VPC)$: $Intro$ & $Subnets$ <a id="one"></a>
 &nbsp; VPCs are comprised of subnets. When a VPC is created, a CIPD must also be specified, and any subnets within the VPC must be within the CIPD range. Subnets can be public (accessable via the internet) or private (only accessable to you), and in general any customer VPC is only accessable by that customer by default - only you can access your VPC. A public subnet within a VPC will have a private IP address as well as a public IP address, and requires an internet gateway to be publically available. Additionally, a route will need to be added to the public subnets route table which will contain a destination field (where you are trying to access) and a target field (the route to that destination). For the public subnet internet gateway, this will look similar to: 
@@ -13,7 +14,7 @@
 
 &nbsp; Running all subnets within the same availability zone can be risky - if that server goes down the whole application goes down. As a result, having additional subnets in multiple availability zones can reduce this risk, and the use of the local route (see above) allows all the subnets to communicate with oneanother. 
 
-## $Security$ $and$ $Network$ $Access$ $Control$ $Lists$
+## $Security$ $and$ $Network$ $Access$ $Control$ $Lists$ <a id="two"></a>
 &nbsp; Network Access Control Lists (NACL) are used to determine who can and who cannot access a subnet, and by default the NACL created when a new subnet is created will allow all inbound and outbound traffic. This is stored in a table similar to the route table and looks something like this:
 
 ### **INBOUND**
