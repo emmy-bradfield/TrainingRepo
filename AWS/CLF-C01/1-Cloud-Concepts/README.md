@@ -1,4 +1,4 @@
-# Cloud Concepts
+# Cloud Concepts <a id="top"></a>
 
 ### Contents
 1. [What is Cloud Computing](#one)
@@ -30,6 +30,10 @@
 
 <br/>
 
+<div style="text-align:right;">
+<a href="#top">Back To Top</a>
+</div>
+
 ---
 
 <br/>
@@ -46,6 +50,10 @@ There are three deployment models used within cloud computing: public, private, 
 *As the name suggests, the Hybrid is a combination of both deployment models. This is established with a network link connecting a private and public cloud model, and may be used when a company requires short bursts of increases resources, or to enable further control over the archetecture compared to the public cloud alone. These deployment models are usually only short-term*
 
 <br/>
+
+<div style="text-align:right;">
+<a href="#top">Back To Top</a>
+</div>
 
 ---
 
@@ -78,6 +86,10 @@ There are three deployment models used within cloud computing: public, private, 
 
 <br/>
 
+<div style="text-align:right;">
+<a href="#top">Back To Top</a>
+</div>
+
 ---
 
 <br/>
@@ -96,6 +108,10 @@ There are three key service models which can be deployed within any cloud deploy
 
 <br/>
 
+<div style="text-align:right;">
+<a href="#top">Back To Top</a>
+</div>
+
 ---
 
 <br/>
@@ -108,6 +124,10 @@ There are three key service models which can be deployed within any cloud deploy
 
 
 <br/>
+
+<div style="text-align:right;">
+<a href="#top">Back To Top</a>
+</div>
 
 ---
 
@@ -123,6 +143,10 @@ Cloud provider architecture is similar to traditional datacenters in many ways, 
 
 
 <br/>
+
+<div style="text-align:right;">
+<a href="#top">Back To Top</a>
+</div>
 
 --- 
 
@@ -146,3 +170,11 @@ Cloud provider architecture is similar to traditional datacenters in many ways, 
 
 ### **Control and Management**
 *The ability to shut down and start up instances as needed, as well as having security and maintenance handled by a vendor, can enable significant control and growth for a business whilst reducing time and cost of maintenance, management, and security duties*
+
+<br/>
+
+<div style="text-align:right;">
+<a href="#top">Back To Top</a>
+</div>
+
+---

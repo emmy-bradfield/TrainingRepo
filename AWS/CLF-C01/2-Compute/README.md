@@ -1,4 +1,4 @@
-# Compute: AWS Compute Services
+# Compute: AWS Compute Services <a id="top"></a>
 
 ### Contents
 1. [EC2 - Elastic Compute Cloud](#one)
@@ -51,6 +51,10 @@ An EC2 instance can be broken down into several components:
 
 <br/>
 
+<div style="text-align:right;">
+<a href="#top">Back To Top</a>
+</div>
+
 ---
 
 <br/>
@@ -60,6 +64,10 @@ An EC2 instance can be broken down into several components:
 &nbsp; An Amazon ECS cluster is comprised of many EC2 instances, which provide functionality such as securty, autoscaling, and elastic load-balancing, and operate in the same way as an EC2 instance. The clusters act as a resource pool and are dynamically scalable, and multiple instance types can be used within the cluster, although they cannot spand multiple regions. 
 
 <br/>
+
+<div style="text-align:right;">
+<a href="#top">Back To Top</a>
+</div>
 
 ---
 
@@ -95,6 +103,10 @@ https://<aws_accound_id>.dkr.ecr.<your-region>.amazonaws.com
 
 <br/>
 
+<div style="text-align:right;">
+<a href="#top">Back To Top</a>
+</div>
+
 ---
 
 <br/>
@@ -112,6 +124,10 @@ https://<aws_accound_id>.dkr.ecr.<your-region>.amazonaws.com
 
 <br/>
 
+<div style="text-align:right;">
+<a href="#top">Back To Top</a>
+</div>
+
 ---
 
 <br/>
@@ -122,6 +138,10 @@ https://<aws_accound_id>.dkr.ecr.<your-region>.amazonaws.com
 &nbsp; The **application** itself within Beanstalk is the collection of different elements (such as environment and configurations), and is deployed across an envionment tier based on need which will provison various AWS resources based on the needs and uses of the application. As Beanstalk is designed to be simple and easy to use, the process for doing so is broken into four steps: Create Application, Upload Version, Launch Environment, Manage Environment. AWS takes care of most of the work during this process.
 
 <br/>
+
+<div style="text-align:right;">
+<a href="#top">Back To Top</a>
+</div>
 
 ---
 
@@ -146,6 +166,10 @@ https://<aws_accound_id>.dkr.ecr.<your-region>.amazonaws.com
 
 <br/>
 
+<div style="text-align:right;">
+<a href="#top">Back To Top</a>
+</div>
+
 ---
 
 <br/>
@@ -165,6 +189,10 @@ https://<aws_accound_id>.dkr.ecr.<your-region>.amazonaws.com
 
 <br/>
 
+<div style="text-align:right;">
+<a href="#top">Back To Top</a>
+</div>
+
 ---
 
 <br/>
@@ -174,6 +202,10 @@ https://<aws_accound_id>.dkr.ecr.<your-region>.amazonaws.com
 &nbsp; Amazon Lightsail is easy to configure and deploy. Simply choose to create an instance, select the region and availbility zone as required, select the platform, and optionally select a blueprint for the service such as Wordpress or Node.JS blueprints, or just use the OS only. A launch script can also optionally be setup, and there is a default key-pair which a user can change if they wish. The instance plan chosen then determines resources used and cost to the end user and is simple to understand and tailor to user need. Lastly, an instance name is required, and tags can optionally be added to identify the instance. The VPS is now configured and ready to go, with easy access to management options such as connecting to the instance, storage, and networking.
 
 <br/>
+
+<div style="text-align:right;">
+<a href="#top">Back To Top</a>
+</div>
 
 ---
 
@@ -223,6 +255,10 @@ Forward to Group_One
 
 <br/>
 
+<div style="text-align:right;">
+<a href="#top">Back To Top</a>
+</div>
+
 ---
 
 <br/>
@@ -244,3 +280,11 @@ Several components make up the AWS EC2-Auto-Scaling service, including:
 ### **AUTO-SCALING & ELB**
 &nbsp; Elastic Load Balancers (ELB) and Autoscaling (AS) can be used together to better optimize and manage EC2 infrastructure. With ELBs distributing traffic as needed to target groups, and AS creatng new resources when demand is higher, it makes sense that they work in a complimentary fashion. An ELB can be attached to an AS group and will automatically distribute traffic to resources in that group, and the ELB needs to be associated with the autoscaling group. <br/>
 &nbsp; To associate an ELB with an AS, open the EC2 console and enter the AS settings where load balancer and target group fields should be visible. Users can then edit the details of their AS group, and add the load balancer - ALB/NLB should be associated with target groups and so selected within the Target Groups field, whereas CLB should be associated with classic load balancers and so selected within the Classic Load Balancers field. This enabled the AS group to recognise and be associated with the resources in the ELB, allowing both to work together.
+
+<br/>
+
+<div style="text-align:right;">
+<a href="#top">Back To Top</a>
+</div>
+
+---

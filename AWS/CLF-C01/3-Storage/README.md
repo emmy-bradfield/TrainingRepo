@@ -1,4 +1,4 @@
-# Storage
+# Storage <a id="top"></a>
 
 ### Contents
 
@@ -34,6 +34,10 @@
 
 <br/>
 
+<div style="text-align:right;">
+<a href="#top">Back To Top</a>
+</div>
+
 ---
 
 <br/>
@@ -43,6 +47,10 @@
 &nbsp; Not all instance types support instance store volumes, and the capacity of the instance store volume increases as the instance increases, as well as having the same mechanisms as provided by EC2 as they are not a seperate storage option so inherit policies and rules. As a result, it is not advised to use instance storage for data that needs to be accessed by multiple users or groups.
 
 <br/>
+
+<div style="text-align:right;">
+<a href="#top">Back To Top</a>
+</div>
 
 ---
 
@@ -56,6 +64,10 @@
 
 <br/>
 
+<div style="text-align:right;">
+<a href="#top">Back To Top</a>
+</div>
+
 ---
 
 <br/>
@@ -67,6 +79,10 @@
 &nbsp; Finally, one may which to configure specific throughput settings. Burst throughput operatings by building BurstCredits at times when throughput is below the minimum threshold, which can then be used to significantly increase throughut beyond the upper threshold for the storage size. Provisioned throughput, on the other hand, allows for the same burst above the threshold as burst without need for BurstCredits but will occur additional charges for bursting above the default option, so is generally most useful for those who require consistent high-performance and speedy access to data.
 
 <br/>
+
+<div style="text-align:right;">
+<a href="#top">Back To Top</a>
+</div>
 
 ---
 
@@ -84,3 +100,11 @@
 
 ### **AWS OpsHub**
 &nbsp; The AWS OpsHub is a GUI designed with the Snow Family in mind. It's an application which can be downloaded to Mac OS or Windows and can be downloaded when a snow device is delivered and is used to unlock the device. It can be used to configure fleets and/or clusters, manage file storage and compute functions, and is fully integrated with AWS Systems Manager to assist with automating of tasks. 
+
+<br/>
+
+<div style="text-align:right;">
+<a href="#top">Back To Top</a>
+</div>
+
+---

@@ -1,4 +1,4 @@
-# Networking
+# Networking <a id="top"></a>
 
 ### Contents
 1. [Virtual Private Cloud: Intro & Subnets](#one)
@@ -13,6 +13,16 @@
 | 0.0.0.0/0 | igw-21268a45 |
 
 &nbsp; Running all subnets within the same availability zone can be risky - if that server goes down the whole application goes down. As a result, having additional subnets in multiple availability zones can reduce this risk, and the use of the local route (see above) allows all the subnets to communicate with oneanother. 
+
+<br/>
+
+<div style="text-align:right;">
+<a href="#top">Back To Top</a>
+</div>
+
+---
+
+<br/>
 
 ## $Security$ $and$ $Network$ $Access$ $Control$ $Lists$ <a id="two"></a>
 &nbsp; Network Access Control Lists (NACL) are used to determine who can and who cannot access a subnet, and by default the NACL created when a new subnet is created will allow all inbound and outbound traffic. This is stored in a table similar to the route table and looks something like this:
@@ -51,3 +61,11 @@
 | Security group created with IP added | $ -> $ | Security group added to public subnet Bastion EC2 Instance | $ -> $ | Inbound allowed from security group in private subnet route table|
 
 &nbsp; However, from here more needs to be configured. It wouldn't be secure to store the private key for the private subnet in the Bastion, or anywhere public, so whilst the user could SSH into the public subnet, SSH forwarding must be setup to allow them to access the private subnet. This allows the private key to be stored on the private subnet on the local client, so from the Bastion host a user can SSH into the private subnet using the private key stored locally.
+
+<br/>
+
+<div style="text-align:right;">
+<a href="#top">Back To Top</a>
+</div>
+
+--- 
