@@ -106,7 +106,7 @@
 ```
     Statement : [
 ```
-> refers to the main element of the body, includingaction and resource definitions
+> refers to the main element of the body, including action and resource definitions
 ```
         {
             sid : random123897string,
@@ -139,7 +139,7 @@
 ```
 > optional; may be permitted IP address(es) or MFA requirement
 
-&nbsp; From this, it is clear the example given above is of an identity, which can be confirmed in that the policy JSON document does not have a principal paremter (required for resource policies), and sets the actual permissions rather than the bounds of permissions (such as permission bounds or OSC policies).
+&nbsp; From this, it is clear the example given in the embedded imnage is of an identity, which can be confirmed in that the policy JSON document does not have a principal paremter (required for resource policies), and sets the actual permissions rather than the bounds of permissions (such as permission bounds or OSC policies).
 <br/>
 <div style="text-align:right;">
 <a href="#top">Back To Top</a>
@@ -151,7 +151,7 @@
 
 
 ## $Trusted$ $Advisor$ <a id="six"></a>
-&nbsp; 
+&nbsp; AWS Trusted Advisor is designed to help optimise decisions and ensure best practice. It does this through recommending improvements across the AWS account to help improve your environment based on best practices such as cost optimization, resource performance, security, fault tolerance, and service limits. Trusted Advisor runs a variety of checks across these five categories and uses the results of the checks to recommend areas for improvement and streamlining, but all features are only available at business or enterprise account level. Notifications, excluded items, suggested action links, access management and refresh rate can all be configured in Trusted Advisor with these levels of accounts, ensuring it is best tailored to the user's needs.
 <br/>
 
 <div style="text-align:right;">
