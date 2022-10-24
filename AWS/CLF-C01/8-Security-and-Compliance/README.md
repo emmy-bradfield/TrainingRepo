@@ -97,6 +97,7 @@
 ### **Organization Service Control Policies**
 *Similar to permission boundaries, but associated with an AWS acocunt or Organizational Unit rather than individual users or resources.*
 <br/>
+<br/>
 &nbsp; IAM policies additionally follow a defined JSON format for their structure, which can be broken down as follows: <br/>
 ```
 {
@@ -164,7 +165,8 @@
 
 
 ## $AWS$ $Organisations$ <a id="seven"></a>
-&nbsp; 
+&nbsp; AWS Organisations enables more secure and efficient management of AWS accounts and policies within an organisation. One account is set as the root, or master, account and this account is then able to create new organisational units, AWS accounts, and manage policies. An organisational unit (OU) is simple a grouping or collective of accounts which form a defined unit within an organisation, and will usually have shared permissions and boundaries applied based on that unit's role. <br/>
+&nbsp; AWS Organisation enable a variety of features, including composite billing (can be enabled as only feature), but one of the most useful is Service Control Policies. These are policies or rules created by the root account, and set the bounds of permissions grantable to an account by identity or resource policies and can enhance security further. All features must be enabled when the organisation root account is setup otherwise service control policies cannot be enabled and applied to users. Additionally, SCPs can only be applied to OUs which are also applied in their parent OU, with the root account being the parent of all other OUs. 
 <br/>
 
 <div style="text-align:right;">
@@ -177,7 +179,12 @@
 
 
 ## $Firewalls$ & $Shields$ <a id="eight"></a>
-&nbsp; 
+&nbsp; The AWS Web Application Firewall (WAF) provides an additional later of security for web content and is generally recommended to use as WAF help protect websites and web application from malicious attacks. AWS WAF is simpler and quicker to implment than a standard firewall, and interacts with a variety of other AWS service. Consisting of Web Access Control Lists (Web ACLs), Rules, and Rule Groups, WAF protects users web apps by:
+* Determining which web requests are considered safe
+* Setting controls and criteria checks for web requests
+* Blocking requests which do not meet the acceptance criteria
+&nbsp; AWS Firewall Manager enables security across multiple AWS accounts, allowing security policies to be easily applied across resources. Additionally, it is closely integrated with AWS Organisation (Organisations being a pre-requisitre to Firewall Manager). An account within the organisation must be configured as the Firewall Manager admin, and from here sharing and regions can be enabled if prefered so that Firewall Manager can manage policies across all AWS accounts and regions. <br/>
+&nbsp; AWS Shield is the final of the trifecta, and is related to the aforementioned although specifically designed for protection against Distributed Denial of Service (DDoS) attacks. Available at two different levels, AWS shield by default offers DDoS protection against layer 3 and 4 (Network and Transprot) DDoS attacks which is integrated with CloudFront and AWS Route 53. The AWS Shield Advanced tier offers further features, specifically protection across a wider range of services (EC2 and ELB), and offers enhanced protection against attacks alongside a 24/7 specialised DDoS attack response team. Finally, the advanced tier additionally offers real-time metrics of attacks and additional protection against layer 7 (Application) DDoS attacks alongside cost protection.
 <br/>
 
 <div style="text-align:right;">
@@ -190,7 +197,15 @@
 
 
 ## $Other$ $Services$ <a id="nine"></a>
-&nbsp; 
+### **Amazon Inspector**
+*Allows you to analyse your EC2 instance and identify potential security issues including access to security rules and automated scanning. Findings are given in a prioritised list*
+
+### **Amazon Guard Duty**
+*An intellegent threat-detection service which provides an accurate way to monitor and protect AWS accounts, using AI and customisable as per the users need such as through adding threat lists. As above, findings are classified by severity*
+
+### **Amazon Macie**
+*Macie using machine learning to analyse stored data within Amazon buckets and assess private and protected information in them. Highly scalable and automatable, and as previous Macie also provides a prioritsed findings list*
+
 <br/>
 
 <div style="text-align:right;">
